@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Classes 9-12 | BHANU StudyCentre</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --navy: #07152e;
+  --card: #10213d;
+  --gold: #ffbf36;
+  --orange: #ff861b;
+  --white: #fff;
+  --muted: #b7c4d9;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+header {
+  padding: 18px 5%;
+  border-bottom: 1px solid #263957;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand {
+  color: var(--gold);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.brand small {
+  display: block;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.back {
+  color: var(--gold);
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 18px 35px;
+}
+
+h1 {
+  font-size: clamp(30px, 5vw, 44px);
+  margin-bottom: 10px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.hero p {
+  color: var(--muted);
+}
+
+.container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 15px 20px 60px;
+}
+
+.search {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 35px;
+  padding: 15px;
+  border: 1px solid #344661;
+  border-radius: 10px;
+  background: var(--card);
+  color: white;
+  font-size: 16px;
+}
+
+.classes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.class-card {
+  background: var(--card);
+  border: 1px solid #263957;
+  border-radius: 18px;
+  padding: 25px;
+}
+
+.class-card h2 {
+  margin-top: 0;
+  color: var(--gold);
+}
+
+.class-card p {
+  color: var(--muted);
+}
+
+.subjects {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.subject {
+  display: inline-block;
+  background: #172d4d;
+  border: 1px solid #354b69;
+  color: white;
+  padding: 9px 13px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.subject:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.note {
+  margin-top: 30px;
+  padding: 18px;
+  border-radius: 12px;
+  background: #0c203b;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid #263957;
+  padding: 25px;
+  color: var(--muted);
+}
+
+@media (max-width: 650px) {
+  .classes {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    padding: 15px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="preview.html">
+    ☀️ BHANU
+    <small>STUDYCENTRE</small>
+  </a>
+
+  <a class="back" href="preview.html">← Home</a>
+</header>
+
+<section class="hero">
+  <h1>Explore Your <span class="gold">Class</span></h1>
+
+  <p>
+    अपनी कक्षा और विषय चुनें।<br>
+    Select your class and subject.
+  </p>
+</section>
+
+<main class="container">
+
+  <input
+    class="search"
+    type="search"
+    id="search"
+    placeholder="Search class or subject / कक्षा या विषय खोजें..."
+    aria-label="Search classes and subjects"
+  >
+
+  <div class="classes" id="classes">
+
+    <article class="class-card">
+      <h2>📘 Class 9</h2>
+      <p>कक्षा 9 के विषय | Class 9 Subjects</p>
+
+      <div class="subjects">
+        <a class="subject" href="class9-maths.html">Maths / गणित</a>
+        <a class="subject" href="class9-science.html">Science / विज्ञान</a>
+        <a class="subject" href="class9-english.html">English / अंग्रेज़ी</a>
+        <a class="subject" href="class9-hindi.html">Hindi / हिंदी</a>
+        <a class="subject" href="class9-social-science.html">Social Science / सामाजिक विज्ञान</a>
+      </div>
+    </article>
+
+    <article class="class-card">
+      <h2>📗 Class 10</h2>
+      <p>कक्षा 10 के विषय | Class 10 Subjects</p>
+
+      <div class="subjects">
+        <a class="subject" href="class10-maths.html">Maths / गणित</a>
+        <a class="subject" href="class10-science.html">Science / विज्ञान</a>
+        <a class="subject" href="class10-english.html">English / अंग्रेज़ी</a>
+        <a class="subject" href="class10-hindi.html">Hindi / हिंदी</a>
+        <a class="subject" href="class10-social-science.html">Social Science / सामाजिक विज्ञान</a>
+      </div>
+    </article>
+
+    <article class="class-card">
+      <h2>📙 Class 11</h2>
+      <p>अपनी Stream चुनें | Select Your Stream</p>
+
+      <div class="subjects">
+        <a class="subject" href="class11-physics.html">Physics / भौतिक विज्ञान</a>
+        <a class="subject" href="class11-chemistry.html">Chemistry / रसायन विज्ञान</a>
+        <a class="subject" href="class11-maths.html">Mathematics / गणित</a>
+        <a class="subject" href="class11-biology.html">Biology / जीव विज्ञान</a>
+        <a class="subject" href="class11-commerce.html">Commerce / वाणिज्य</a>
+        <a class="subject" href="class11-arts.html">Arts / कला वर्ग</a>
+        <a class="subject" href="class11-english.html">English / अंग्रेज़ी</a>
+      </div>
+    </article>
+
+    <article class="class-card">
+      <h2>📕 Class 12</h2>
+      <p>अपनी Stream चुनें | Select Your Stream</p>
+
+      <div class="subjects">
+        <a class="subject" href="class12-physics.html">Physics / भौतिक विज्ञान</a>
+        <a class="subject" href="class12-chemistry.html">Chemistry / रसायन विज्ञान</a>
+        <a class="subject" href="class12-maths.html">Mathematics / गणित</a>
+        <a class="subject" href="class12-biology.html">Biology / जीव विज्ञान</a>
+        <a class="subject" href="class12-commerce.html">Commerce / वाणिज्य</a>
+        <a class="subject" href="class12-arts.html">Arts / कला वर्ग</a>
+        <a class="subject" href="class12-english.html">English / अंग्रेज़ी</a>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="note">
+    <strong>📚 BHANU StudyCentre</strong><br>
+    सभी विषयों के Chapter-wise Notes और PDF धीरे-धीरे जोड़े जाएँगे।
+    जिन विषयों के पेज अभी नहीं बने हैं, उनके लिंक फिलहाल काम नहीं करेंगे।
+  </div>
+
+</main>
+
+<footer>
+  © <span id="year"></span>
+  <strong>BHANU StudyCentre</strong><br>
+  Learn Today, Lead Tomorrow. ☀️
+</footer>
+
+<script>
+const search = document.getElementById("search");
+const cards = document.querySelectorAll(".class-card");
+
+search.addEventListener("input", function () {
+  const query = this.value.trim().toLowerCase();
+
+  cards.forEach(card => {
+    card.style.display =
+      card.innerText.toLowerCase().includes(query)
+      ? ""
+      : "none";
+  });
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+          </html>
