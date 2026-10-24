@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BHANU StudyCentre | Learn Today, Lead Tomorrow</title>
+
+<meta name="description"
+content="BHANU StudyCentre — Class 9 to 12 study notes, practice quizzes and educational resources in Hindi and English.">
+
+<style>
+:root {
+  --navy: #07152e;
+  --navy-light: #10274b;
+  --gold: #ffbf36;
+  --orange: #ff861b;
+  --white: #ffffff;
+  --muted: #aebbd0;
+  --card: #10213d;
+  --border: rgba(255,255,255,.10);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--navy);
+  color: var(--white);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(7,21,46,.96);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(12px);
+}
+
+.navbar {
+  max-width: 1150px;
+  margin: auto;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-icon {
+  font-size: 38px;
+}
+
+.brand-name {
+  font-size: 23px;
+  font-weight: 900;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+.brand-sub {
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: var(--white);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  max-width: 1150px;
+  margin: auto;
+  padding: 85px 20px 70px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.badge {
+  display: inline-block;
+  padding: 7px 14px;
+  border: 1px solid rgba(255,191,54,.4);
+  background: rgba(255,191,54,.08);
+  border-radius: 30px;
+  color: var(--gold);
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: clamp(36px, 5vw, 61px);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.gold {
+  color: var(--gold);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 560px;
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 12px 19px;
+  font-weight: bold;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+
+.btn-gold {
+  color: var(--navy);
+  background: linear-gradient(135deg, var(--gold), var(--orange));
+}
+
+.btn-outline {
+  color: var(--white);
+  background: transparent;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.logo-card {
+  min-height: 320px;
+  border-radius: 25px;
+  border: 1px solid rgba(255,191,54,.25);
+  background:
+    radial-gradient(circle at 50% 35%,
+    rgba(255,191,54,.17), transparent 55%),
+    var(--card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.big-sun {
+  font-size: 105px;
+  line-height: 1.3;
+  filter: drop-shadow(0 0 25px rgba(255,191,54,.3));
+}
+
+.logo-card h2 {
+  font-size: 38px;
+  letter-spacing: 5px;
+  color: var(--gold);
+}
+
+.logo-card p {
+  margin: 7px 0 0;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+section {
+  padding: 65px 20px;
+}
+
+.section-inner {
+  max-width: 1150px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: clamp(27px, 4vw, 38px);
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+.search-box {
+  max-width: 650px;
+  margin: 0 auto 35px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  min-width: 0;
+  flex: 1;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  color: white;
+  font-size: 15px;
+}
+
+.search-box button {
+  border: none;
+  padding: 0 20px;
+  border-radius: 10px;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 17px;
+  padding: 24px;
+  transition: .2s;
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 17px;
+}
+
+.card-link {
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.features {
+  background: #0a1b36;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.no-results {
+  display: none;
+  text-align: center;
+  color: var(--muted);
+  margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 55px;
+  }
+
+  .logo-card {
+    min-height: 250px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 12px;
+  }
+
+  .brand-icon {
+    font-size: 29px;
+  }
+
+  .brand-name {
+    font-size: 18px;
+  }
+
+  .brand-sub {
+    font-size: 8px;
+  }
+
+  nav {
+    gap: 9px;
+  }
+
+  nav a {
+    font-size: 11px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box button {
+    padding: 0 12px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-icon">☀️</span>
+      <div>
+        <div class="brand-name">BHANU</div>
+        <div class="brand-sub">STUDYCENTRE</div>
+      </div>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#classes">Classes</a>
+      <a href="#features">Features</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div>
+    <span class="badge">☀️ Your Learning Journey Starts Here</span>
+
+    <h1>
+      Learn Today,<br>
+      <span class="gold">Lead Tomorrow.</span>
+    </h1>
+
+    <p>
+      Welcome to BHANU StudyCentre!
+      कक्षा 9 से 12 तक की पढ़ाई के लिए
+      Notes, learning resources और practice materials
+      एक ही जगह पर पाएँ।
+    </p>
+
+    <div class="buttons">
+      <a class="btn btn-gold" href="#classes">
+        Explore Classes →
+      </a>
+
+      <a class="btn btn-outline" href="#features">
+        Discover Features
+      </a>
+    </div>
+  </div>
+
+  <div class="logo-card">
+    <div class="big-sun">☀️</div>
+    <h2>BHANU</h2>
+    <p>STUDYCENTRE</p>
+    <p class="gold">Learn Today, Lead Tomorrow.</p>
+  </div>
+</section>
+
+<section id="classes">
+  <div class="section-inner">
+
+    <div class="section-heading">
+      <h2>Explore Your <span class="gold">Class</span></h2>
+      <p>अपनी कक्षा चुनें और पढ़ाई शुरू करें।</p>
+    </div>
+
+    <div class="search-box">
+      <input
+        type="search"
+        id="searchInput"
+        placeholder="Search classes... / कक्षा खोजें"
+        aria-label="Search classes"
+      >
+      <button type="button" id="searchButton">Search</button>
+    </div>
+
+    <div class="grid" id="classGrid">
+
+      <article class="card" data-search="class 9 नौवीं">
+        <div class="card-icon">📘</div>
+        <h3>Class 9</h3>
+        <p>कक्षा 9 के Notes और अध्ययन सामग्री।</p>
+        <a class="card-link" href="#features">Explore →</a>
+      </article>
+
+      <article class="card" data-search="class 10 दसवीं">
+        <div class="card-icon">📗</div>
+        <h3>Class 10</h3>
+        <p>बोर्ड परीक्षा की तैयारी के लिए सामग्री।</p>
+        <a class="card-link" href="#features">Explore →</a>
+      </article>
+
+      <article class="card" data-search="class 11 ग्यारहवीं">
+        <div class="card-icon">📙</div>
+        <h3>Class 11</h3>
+        <p>Science, Commerce और Arts की सामग्री।</p>
+        <a class="card-link" href="#features">Explore →</a>
+      </article>
+
+      <article class="card" data-search="class 12 बारहवीं">
+        <div class="card-icon">📕</div>
+        <h3>Class 12</h3>
+        <p>परीक्षा की तैयारी के लिए अध्ययन सामग्री।</p>
+        <a class="card-link" href="#features">Explore →</a>
+      </article>
+
+    </div>
+
+    <p class="no-results" id="noResults">
+      कोई कक्षा नहीं मिली। दूसरी खोज करके देखें।
+    </p>
+
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="section-inner">
+
+    <div class="section-heading">
+      <h2>Learn <span class="gold">Smarter</span></h2>
+      <p>पढ़ाई के लिए जरूरी सुविधाएँ एक जगह।</p>
+    </div>
+
+    <div class="feature-grid">
+
+      <article class="card">
+        <div class="card-icon">📚</div>
+        <h3>Study Notes</h3>
+        <p>हिंदी और English में विषयवार Notes पढ़ें।</p>
+        <span class="card-link">Notes Section</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📄</div>
+        <h3>PDF Resources</h3>
+        <p>उपलब्ध होने पर PDF अध्ययन सामग्री खोलें।</p>
+        <span class="card-link">PDF Section</span>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📝</div>
+        <h3>Practice Quiz</h3>
+        <p>अपनी तैयारी जाँचने के लिए Quiz का अभ्यास करें।</p>
+        <span class="card-link">Quiz Section</span>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>
+    © <span id="year"></span>
+    <strong>BHANU StudyCentre</strong>.
+    All rights reserved.
+  </p>
+  <p>Learn Today, Lead Tomorrow. ☀️</p>
+</footer>
+
+<script>
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const cards = document.querySelectorAll("#classGrid .card");
+const noResults = document.getElementById("noResults");
+
+function searchClasses() {
+  const query = searchInput.value.trim().toLowerCase();
+  let found = 0;
+
+  cards.forEach(card => {
+    const text = (
+      card.innerText + " " +
+      card.dataset.search
+    ).toLowerCase();
+
+    const matches = text.includes(query);
+
+    card.classList.toggle("hidden", !matches);
+
+    if (matches) found++;
+  });
+
+  noResults.style.display = found === 0 ? "block" : "none";
+}
+
+searchButton.addEventListener("click", searchClasses);
+
+searchInput.addEventListener("input", searchClasses);
+
+searchInput.addEventListener("keydown", event => {
+  if (event.key === "Enter") {
+    searchClasses();
+  }
+});
+
+document.getElementById("year").textContent =
+  new Date().getFullYear();
+</script>
+
+</body>
+      </html>
