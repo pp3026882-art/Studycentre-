@@ -2,120 +2,82 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="StudyCentre — notes, practice tests, and a study planner for students.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>StudyCentre | Learn • Practice • Grow</title>
 <style>
-:root{--blue:#2563eb;--purple:#6546f5;--ink:#10254c;--muted:#60708f;--line:#e0e9f7;--bg:#f5f9ff;--green:#10b981}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}button,input,textarea{font:inherit}button{cursor:pointer}
-header{position:sticky;top:0;z-index:10;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{max-width:1240px;margin:auto;padding:14px 22px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:24px;white-space:nowrap}.brand-icon{font-size:30px;color:var(--blue)}.brand span span{color:var(--blue)}.navlinks{display:flex;gap:8px;margin:auto}.navlinks a{padding:10px 13px;border-radius:20px;text-decoration:none;color:var(--ink);font-size:14px;font-weight:650}.navlinks a:hover,.navlinks a.active{background:var(--purple);color:white}.nav button{border:1px solid #b9ccff;background:#fff;color:var(--blue);padding:10px 18px;border-radius:12px;font-weight:700}.nav .primary{background:var(--blue);color:white;border-color:var(--blue)}
-main{max-width:1240px;margin:auto;padding:22px}.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:center;background:linear-gradient(120deg,#f3f8ff,#f5f1ff);padding:35px;border-radius:24px;overflow:hidden}.eyebrow{font-weight:750;color:var(--blue);font-size:14px}.hero h1{font-size:clamp(34px,4vw,52px);line-height:1.12;letter-spacing:-1.5px;margin:12px 0}.gradient{background:linear-gradient(90deg,#1478ee,#7445f5);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{line-height:1.7;color:#526582;max-width:560px}.search{display:flex;gap:8px;background:white;border:1px solid #d6e2f5;border-radius:14px;padding:7px;margin:20px 0;max-width:570px}.search input{flex:1;min-width:0;border:0;outline:0;padding:10px;background:transparent}.search button,.btn{border:0;border-radius:11px;padding:12px 18px;background:var(--blue);color:#fff;font-weight:750}.stats{display:flex;gap:20px;flex-wrap:wrap;margin-top:22px}.stat{border-right:1px solid #d4def0;padding-right:18px}.stat strong{display:block;font-size:20px}.stat small{color:var(--muted)}.hero-art{min-height:270px;display:grid;place-items:center;position:relative}.student-emoji{font-size:115px;filter:drop-shadow(0 12px 12px #203d6a20)}.laptop{font-size:64px;margin-top:-20px}.bubble{position:absolute;background:white;border:1px solid #e2e9f7;border-radius:14px;padding:12px 15px;box-shadow:0 10px 30px #1e3a8a10;font-weight:700;font-size:13px}.b1{top:10px;left:0}.b2{top:28px;right:0}.b3{bottom:24px;left:5px}.b4{bottom:12px;right:6px}
-section{margin-top:28px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:12px;margin-bottom:14px}.section-head h2{margin:0;font-size:24px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:14px}.text-btn{border:0;background:transparent;color:var(--blue);font-weight:750}
-.subjects{display:grid;grid-template-columns:repeat(8,1fr);gap:12px}.subject{border:1px solid var(--line);border-radius:15px;padding:18px 8px;text-align:center;background:white;box-shadow:0 3px 10px #1d3d6a06}.subject .emoji{width:48px;height:48px;border-radius:15px;display:grid;place-items:center;margin:0 auto 10px;font-size:24px;background:#e8f1ff}.subject strong{font-size:13px}
-.columns{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px}.panel{border:1px solid var(--line);border-radius:17px;padding:18px;background:#fff;box-shadow:0 5px 18px #15366a08}.panel h3{margin:0 0 14px;font-size:18px;display:flex;gap:9px;align-items:center}.row{display:flex;gap:10px;align-items:center;padding:13px 0;border-top:1px solid #edf2fa}.row:first-of-type{border-top:0}.icon{width:39px;height:39px;border-radius:12px;display:grid;place-items:center;background:#e6f7ef;font-size:20px;flex-shrink:0}.row-info{flex:1;min-width:0}.row-info strong{display:block;font-size:13px}.row-info small{display:block;color:var(--muted);font-size:12px;margin-top:5px}.pill{border:0;border-radius:9px;background:#e8f1ff;color:var(--blue);padding:8px 10px;font-weight:750;font-size:12px}.green{background:#10b981;color:#fff}.planner-date{display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;margin-bottom:10px}.days{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}.day{border:1px solid #e6edf8;border-radius:8px;text-align:center;padding:8px 0;font-size:11px;color:var(--muted)}.day b{display:block;color:var(--ink);margin-top:4px}.day.today{background:var(--blue);color:white}.day.today b{color:white}.task{display:flex;gap:8px;align-items:center;padding:10px 0;border-bottom:1px solid #eef2f8;font-size:13px}.task input{accent-color:var(--green)}.add-task{display:flex;gap:7px;margin-top:12px}.add-task input{min-width:0;flex:1;border:1px solid var(--line);border-radius:9px;padding:9px}.add-task button{border:0;background:var(--blue);color:white;border-radius:9px;padding:9px 12px}
-.ai-box{background:linear-gradient(135deg,#eff7ff,#f5efff);border:1px solid #dfe7fb;border-radius:18px;padding:22px}.ai-box h3{margin-top:0}.quick-prompts{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}.quick-prompts button{background:#fff;border:1px solid #d9e4f6;color:#425578;border-radius:20px;padding:9px 12px;font-size:12px}.chat{background:white;border:1px solid #dbe6f7;border-radius:13px;padding:14px;min-height:72px;color:#526582;line-height:1.55}.chat-form{display:flex;gap:8px;margin-top:10px}.chat-form input{flex:1;min-width:0;border:1px solid #d4e0f2;border-radius:10px;padding:12px}.banner{margin:28px 0;background:linear-gradient(100deg,#bfe6ff,#e3c7ff);border-radius:16px;padding:20px 24px;display:flex;justify-content:space-between;align-items:center;gap:12px}.banner h3{margin:0 0 5px}.banner p{margin:0;color:#385179;font-size:14px}footer{background:#102443;color:#fff;margin-top:30px}.foot{max-width:1240px;margin:auto;padding:25px 22px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}.foot small{color:#b8c8e2}.modal{display:none;position:fixed;inset:0;background:#07152ab3;z-index:20;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-card{background:white;border-radius:18px;padding:24px;max-width:480px;width:100%}.modal-card h2{margin-top:0}.modal-card input{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;margin:7px 0 12px}.close{float:right;background:#edf2fa;border:0;border-radius:8px;padding:6px 10px}.empty{color:var(--muted);font-size:13px}
-@media(max-width:950px){.navlinks{display:none}.hero{grid-template-columns:1fr}.hero-art{min-height:220px}.subjects{grid-template-columns:repeat(4,1fr)}.columns{grid-template-columns:1fr 1fr}.columns .panel:last-child{grid-column:1/-1}}
-@media(max-width:600px){.nav{padding:12px 15px;gap:10px}.brand{font-size:20px}.nav button{padding:9px 11px;font-size:12px}.nav .login{display:none}main{padding:13px}.hero{padding:22px 17px}.hero h1{font-size:35px}.hero-art{min-height:190px}.student-emoji{font-size:88px}.bubble{font-size:11px;padding:8px}.stats{gap:12px}.stat strong{font-size:17px}.subjects{grid-template-columns:repeat(2,1fr)}.columns{grid-template-columns:1fr}.columns .panel:last-child{grid-column:auto}.section-head h2{font-size:21px}.banner{align-items:flex-start;flex-direction:column}.foot{padding:22px 16px}}
+:root{--blue:#2563eb;--purple:#7655df;--ink:#14213d;--muted:#5b6780;--bg:#f5f7ff;--line:#e1e7f0}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+nav{max-width:1100px;margin:auto;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{font-weight:800;font-size:25px;color:var(--ink)}.brand span{color:var(--blue)}
+button,select,input{font:inherit}button{cursor:pointer;border:0;border-radius:12px;padding:11px 15px;background:var(--blue);color:#fff;font-weight:700}
+select,input{padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);max-width:100%}
+.wrap{max-width:1100px;margin:auto;padding:24px 18px}
+.hero{padding:32px;border-radius:24px;background:linear-gradient(135deg,#eef6ff,#f3edff);margin-top:18px}
+.eyebrow{font-weight:800;color:var(--blue);letter-spacing:.04em}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.12;margin:12px 0}.gradient{background:linear-gradient(90deg,var(--blue),var(--purple));color:transparent;background-clip:text}
+.hero p{font-size:18px;color:var(--muted);max-width:760px}.searchrow{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.searchrow input{flex:1;min-width:190px}
+.stats{display:flex;gap:22px;flex-wrap:wrap;margin-top:22px}.stats strong{display:block;font-size:18px}
+h2{margin-bottom:8px}.muted{color:var(--muted)}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 5px 20px #1725540a}
+.card h3{margin:6px 0}.emoji{font-size:26px}.tag{display:inline-block;background:#eef3ff;color:#244fc0;padding:3px 9px;border-radius:20px;font-size:12px;font-weight:700}
+section{margin:28px 0}.note{border-left:4px solid var(--blue)}.answer{display:block;margin:8px 0;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);text-align:left;width:100%}.answer:hover{background:#eef3ff}
+footer{text-align:center;padding:28px;color:var(--muted)}
+@media(max-width:600px){.hero{padding:22px}.brand{font-size:21px}.wrap{padding:16px 12px}}
 </style>
 </head>
 <body>
-<header><nav class="nav">
-  <div class="brand"><div class="brand-icon">📘</div><span>Study<span>Centre</span></span></div>
-  <div class="navlinks"><a class="active" href="#home">Home</a><a href="#notes">Notes</a><a href="#tests">Tests</a><a href="#ai">AI Assistant</a><a href="#planner">Planner</a></div>
-  <button class="login" onclick="openModal()">Login</button><button class="primary" onclick="openModal()">Sign Up</button>
-</nav></header>
-<main>
-<section class="hero" id="home">
- <div><div class="eyebrow">WELCOME TO STUDYCENTRE</div><h1>Your Study Partner<br>for a <span class="gradient">Better Tomorrow</span></h1>
- <p>StudyCentre helps students learn, practice, and grow. Explore study notes, take practice tests, and organize your study routine — all in one place.</p>
- <form class="search" onsubmit="searchSite(event)"><input id="searchInput" placeholder="Search notes, topics, or subjects..." aria-label="Search"><button>Search</button></form>
- <div class="stats"><div class="stat"><strong>📄 Notes</strong><small>Learning resources</small></div><div class="stat"><strong>📝 Tests</strong><small>Practice anytime</small></div><div class="stat"><strong>🎯 Your Goals</strong><small>Track your progress</small></div></div></div>
- <div class="hero-art"><div class="bubble b1">📚 Learn Anytime</div><div class="bubble b2">🤖 Ask AI Assistant</div><div class="student-emoji">👨‍🎓</div><div class="laptop">💻</div><div class="bubble b3">🧩 Practice & Improve</div><div class="bubble b4">🗓️ Stay on Track</div></div>
+<header><nav><div class="brand">📘 Study<span>Centre</span></div><button onclick="document.getElementById('study').scrollIntoView({behavior:'smooth'})">Start Learning / पढ़ाई शुरू करें</button></nav></header>
+<main class="wrap">
+<section class="hero">
+<div class="eyebrow">WELCOME • स्वागत है</div>
+<h1>Your Study Partner for a <span class="gradient">Better Tomorrow</span></h1>
+<p>StudyCentre helps you learn, practise, and grow. पढ़ाई के नोट्स पढ़ें, MCQ टेस्ट हल करें और अपनी पढ़ाई की योजना बनाएँ।</p>
+<div class="searchrow"><input id="search" placeholder="Search subject / विषय खोजें…" aria-label="Search subjects"><button onclick="renderSubjects()">Search / खोजें</button></div>
+<div class="stats"><div>📄 <strong>Study Notes</strong><span class="muted">नोट्स</span></div><div>📝 <strong>Practice Tests</strong><span class="muted">अभ्यास टेस्ट</span></div><div>🎯 <strong>Study Goals</strong><span class="muted">पढ़ाई के लक्ष्य</span></div></div>
 </section>
-<section><div class="section-head"><div><h2>Popular Subjects</h2><p>Choose a subject to explore learning resources</p></div><button class="text-btn" onclick="showMessage('More subjects will be added soon.')">View all →</button></div>
-<div class="subjects">
- <button class="subject" onclick="filterSubject('Mathematics')"><div class="emoji">√x</div><strong>Mathematics</strong></button>
- <button class="subject" onclick="filterSubject('Science')"><div class="emoji" style="background:#effbdc">🧪</div><strong>Science</strong></button>
- <button class="subject" onclick="filterSubject('English')"><div class="emoji" style="background:#eee7ff">📖</div><strong>English</strong></button>
- <button class="subject" onclick="filterSubject('Social Science')"><div class="emoji" style="background:#fff0dc">🌍</div><strong>Social Science</strong></button>
- <button class="subject" onclick="filterSubject('Hindi')"><div class="emoji" style="background:#ffe8eb">अ</div><strong>Hindi</strong></button>
- <button class="subject" onclick="filterSubject('Computer Science')"><div class="emoji" style="background:#ddfbf7">⌘</div><strong>Computer Science</strong></button>
- <button class="subject" onclick="filterSubject('Commerce')"><div class="emoji" style="background:#fff5d5">📊</div><strong>Commerce</strong></button>
- <button class="subject" onclick="filterSubject('BCA / IT')"><div class="emoji" style="background:#f1e4ff">💻</div><strong>BCA / IT</strong></button>
-</div></section>
-<section class="columns">
- <div class="panel" id="notes"><h3>📄 Latest Study Notes</h3>
-  <div class="row searchable" data-subject="Science"><div class="icon">🌿</div><div class="row-info"><strong>Photosynthesis — Quick Notes</strong><small>Science · Biology basics</small></div><button class="pill" onclick="showNote('Photosynthesis','Plants use sunlight, water, and carbon dioxide to make glucose and release oxygen. Chlorophyll helps absorb light.')">Read</button></div>
-  <div class="row searchable" data-subject="Mathematics"><div class="icon">🔢</div><div class="row-info"><strong>Real Numbers — Revision</strong><small>Mathematics · Key concepts</small></div><button class="pill" onclick="showNote('Real Numbers','Real numbers include rational and irrational numbers. Rational numbers can be written as p/q where q is not zero.')">Read</button></div>
-  <div class="row searchable" data-subject="Computer Science"><div class="icon">💻</div><div class="row-info"><strong>HTML & CSS — Basics</strong><small>Computer Science · Web development</small></div><button class="pill" onclick="showNote('HTML & CSS','HTML defines the structure of a webpage. CSS controls its visual style, including colors, spacing, and layout.')">Read</button></div>
-  <div class="row searchable" data-subject="English"><div class="icon">📘</div><div class="row-info"><strong>Parts of Speech — Overview</strong><small>English · Grammar</small></div><button class="pill" onclick="showNote('Parts of Speech','Common parts of speech include nouns, pronouns, verbs, adjectives, adverbs, prepositions, conjunctions, and interjections.')">Read</button></div>
- </div>
- <div class="panel" id="tests"><h3>📝 Take Online Tests</h3>
-  <div class="row"><div class="icon">🧮</div><div class="row-info"><strong>Mathematics Quiz</strong><small>Sample MCQ · 3 questions</small></div><button class="pill green" onclick="startQuiz()">Start</button></div>
-  <div class="row"><div class="icon">🧪</div><div class="row-info"><strong>Science Basics</strong><small>Sample MCQ · 3 questions</small></div><button class="pill green" onclick="startQuiz()">Start</button></div>
-  <div class="row"><div class="icon">🌐</div><div class="row-info"><strong>Computer Basics</strong><small>Sample MCQ · 3 questions</small></div><button class="pill green" onclick="startQuiz()">Start</button></div>
-  <p class="empty">Demo quizzes are included. Add your own questions as you build the site.</p>
- </div>
- <div class="panel" id="planner"><h3>🗓️ Study Planner</h3><div class="planner-date"><span>My tasks</span><span id="taskCount">0 tasks</span></div>
-  <div id="taskList"><div class="task"><input type="checkbox"><span>Revise one topic</span></div><div class="task"><input type="checkbox"><span>Practice 10 questions</span></div></div>
-  <form class="add-task" onsubmit="addTask(event)"><input id="taskInput" placeholder="Add a study task..." required><button>+ Add</button></form>
- </div>
+<section id="study">
+<h2>Choose Your Class / अपनी कक्षा चुनें</h2>
+<div class="controls"><select id="classSelect" onchange="renderSubjects()"><option value="all">All classes / सभी कक्षाएँ</option><option>Class 9</option><option>Class 10</option><option>Class 11</option><option>Class 12</option><option>College</option></select><select id="langSelect" onchange="renderSubjects()"><option value="both">Hindi + English / हिंदी + English</option><option value="Hindi">Hindi / हिंदी</option><option value="English">English</option></select></div>
+<div id="subjects" class="grid"></div>
 </section>
-<section id="ai"><div class="section-head"><div><h2>AI Study Assistant</h2><p>Try a study question or get a simple explanation</p></div></div>
-<div class="ai-box"><h3>🤖 What would you like to learn today?</h3><div class="chat" id="chatAnswer" role="status" aria-live="polite">Hi! I’m the StudyCentre demo assistant. Ask a question below. This page is ready to connect to a secure AI backend. Until you configure it, demo answers are shown.</div>
-<div class="quick-prompts"><button onclick="quickAsk('Explain photosynthesis in simple words')">Explain photosynthesis</button><button onclick="quickAsk('What is the difference between HTML and CSS?')">HTML vs CSS</button><button onclick="quickAsk('Give me a study plan for today')">Make a study plan</button></div>
-<form class="chat-form" onsubmit="askAssistant(event)"><input id="chatInput" placeholder="Type your study question..." required><button class="btn">Ask</button></form></div></section>
-<div class="banner"><div><h3>Small Steps Make Big Dreams ✨</h3><p>Keep learning, keep practicing, and keep growing.</p></div><button class="btn" onclick="document.querySelector('#notes').scrollIntoView({behavior:'smooth'})">Start Learning →</button></div>
+<section>
+<h2>Quick Practice / छोटा टेस्ट</h2>
+<div class="card">
+<p><strong>Maths / गणित:</strong> What is 7 × 8? / 7 × 8 कितना होता है?</p>
+<button class="answer" onclick="check(false)">54</button><button class="answer" onclick="check(true)">56</button><button class="answer" onclick="check(false)">64</button>
+<p id="quizResult" class="muted" aria-live="polite">Choose an answer / उत्तर चुनें।</p>
+</div>
+</section>
+<section>
+<h2>Study Planner / पढ़ाई की योजना</h2>
+<div class="card"><p class="muted">आज का पढ़ाई का लक्ष्य लिखें। यह सूची इसी ब्राउज़र में सेव रहती है।</p>
+<div class="searchrow"><input id="taskInput" placeholder="e.g. Revise Chapter 1 / अध्याय 1 दोहराएँ"><button onclick="addTask()">Add / जोड़ें</button></div><ul id="tasks"></ul></div>
+</section>
+<section><h2>AI Study Assistant / AI पढ़ाई सहायक</h2><div class="card"><p>यह अभी एक demo section है। असली AI जवाब पाने के लिए सुरक्षित backend और AI API की जरूरत होगी। अपना API key इस HTML फाइल में कभी न डालें।</p><p class="muted">Ask a teacher, parent, or trusted adult before connecting paid services.</p></div></section>
 </main>
-<footer><div class="foot"><div class="brand">📘 <span>StudyCentre</span></div><small>Learn · Practice · Grow</small><small>© <span id="year"></span> StudyCentre · Student learning demo</small></div></footer>
-<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="close" onclick="closeModal()">✕</button><h2 id="modalTitle">Welcome to StudyCentre</h2><p class="empty">Login and account creation are visual demos in this starter website. Authentication has not been connected.</p><label>Email</label><input type="email" placeholder="you@example.com"><label>Password</label><input type="password" placeholder="At least 8 characters"><button class="btn" style="width:100%" onclick="showMessage('Demo only: login is not connected yet.');closeModal()">Continue</button></div></div>
+<footer>© <span id="year"></span> StudyCentre • Learn • Practice • Grow<br>सीखें • अभ्यास करें • आगे बढ़ें</footer>
 <script>
-document.getElementById('year').textContent=new Date().getFullYear();
-function showMessage(msg){alert(msg)}
-function openModal(){document.getElementById('modal').classList.add('open')}
-function closeModal(){document.getElementById('modal').classList.remove('open')}
-function showNote(title,body){document.getElementById('modalTitle').textContent=title;document.querySelector('.modal-card .empty').textContent=body;document.querySelector('.modal-card label').style.display='none';document.querySelectorAll('.modal-card input').forEach(x=>x.style.display='none');document.querySelector('.modal-card .btn').textContent='Close';document.querySelector('.modal-card .btn').onclick=()=>{closeModal();resetModal()};openModal()}
-function resetModal(){document.getElementById('modalTitle').textContent='Welcome to StudyCentre';document.querySelector('.modal-card .empty').textContent='Login and account creation are visual demos in this starter website. Authentication has not been connected.';document.querySelectorAll('.modal-card label,.modal-card input').forEach(x=>x.style.display='');document.querySelector('.modal-card .btn').textContent='Continue';document.querySelector('.modal-card .btn').onclick=()=>{showMessage('Demo only: login is not connected yet.');closeModal()}}
-function searchSite(e){e.preventDefault();let q=document.getElementById('searchInput').value.toLowerCase().trim();let rows=[...document.querySelectorAll('.searchable')];let found=0;rows.forEach(r=>{let ok=!q||r.textContent.toLowerCase().includes(q)||r.dataset.subject.toLowerCase().includes(q);r.style.display=ok?'flex':'none';if(ok)found++});document.getElementById('notes').scrollIntoView({behavior:'smooth'});if(!found)showMessage('No matching sample notes found. Try Mathematics, Science, English, or Computer Science.')}
-function filterSubject(subject){document.getElementById('searchInput').value=subject;searchSite(new Event('submit',{cancelable:true}));}
-function addTask(e){e.preventDefault();let input=document.getElementById('taskInput');let text=input.value.trim();if(!text)return;let row=document.createElement('div');row.className='task';let cb=document.createElement('input');cb.type='checkbox';let label=document.createElement('span');label.textContent=text;row.append(cb,label);document.getElementById('taskList').append(row);input.value='';updateCount()}
-function updateCount(){let tasks=[...document.querySelectorAll('#taskList .task')];document.getElementById('taskCount').textContent=tasks.length+' tasks'}
-document.getElementById('taskList').addEventListener('change',e=>{if(e.target.type==='checkbox')e.target.parentElement.style.textDecoration=e.target.checked?'line-through':'none'});updateCount();
-function quickAsk(q){document.getElementById('chatInput').value=q;document.getElementById('chatInput').focus()}
-async function askAssistant(e){
- e.preventDefault();
- const input=document.getElementById('chatInput');
- const q=input.value.trim();
- if(!q)return;
- const answerBox=document.getElementById('chatAnswer');
- answerBox.textContent='Thinking…';
- input.disabled=true;
- try{
-   const response=await fetch('/api/chat',{
-     method:'POST',
-     headers:{'Content-Type':'application/json'},
-     body:JSON.stringify({message:q})
-   });
-   if(!response.ok) throw new Error('AI backend not configured');
-   const data=await response.json();
-   answerBox.textContent=data.reply || 'I could not create an answer. Please try again.';
- }catch(err){
-   const l=q.toLowerCase();
-   let a='';
-   if(l.includes('photosynthesis')) a='Photosynthesis is how green plants make their own food. They use sunlight, water, and carbon dioxide to make sugar and release oxygen. (Demo answer — connect the backend for live AI.)';
-   else if(l.includes('html')&&l.includes('css')) a='HTML creates the structure and content of a webpage. CSS controls how it looks, including colors, fonts, and layout. (Demo answer — connect the backend for live AI.)';
-   else if(l.includes('plan')||l.includes('timetable')) a='Try this plan: 25 minutes reviewing one topic, a 5-minute break, 25 minutes of practice questions, then 10 minutes reviewing mistakes. (Demo answer — connect the backend for live AI.)';
-   else a='The live AI is not connected yet. This website needs its backend deployed and an AI API key configured securely on the server. Never put a secret API key in the HTML file.';
-   answerBox.textContent=a;
- }finally{
-   input.disabled=false;
-   input.value='';
- }
-}
-let quizIndex=0,quizScore=0;const qs=[{q:'What does HTML stand for?',a:['HyperText Markup Language','High Transfer Machine Link','Home Tool Markup Language'],c:0},{q:'Which gas do plants absorb during photosynthesis?',a:['Oxygen','Carbon dioxide','Helium'],c:1},{q:'What is 7 × 8?',a:['54','56','64'],c:1}];
-function startQuiz(){quizIndex=0;quizScore=0;nextQuestion()}
-function nextQuestion(){if(quizIndex>=qs.length){showMessage('Quiz complete! Your score: '+quizScore+'/'+qs.length);return}let item=qs[quizIndex];let answer=prompt('Question '+(quizIndex+1)+'/'+qs.length+': '+item.q+'\n\n'+item.a.map((x,i)=>(i+1)+'. '+x).join('\n')+'\n\nType 1, 2, or 3:');if(answer===null)return;if(Number(answer)-1===item.c)quizScore++;quizIndex++;nextQuestion()}
+const data=[
+{cls:"Class 9",name:"Mathematics",hi:"गणित",emoji:"➗",topics:"Number Systems • Algebra • Geometry"},
+{cls:"Class 9",name:"Science",hi:"विज्ञान",emoji:"🔬",topics:"Matter • Motion • Cells"},
+{cls:"Class 10",name:"Mathematics",hi:"गणित",emoji:"📐",topics:"Real Numbers • Algebra • Trigonometry"},
+{cls:"Class 10",name:"Science",hi:"विज्ञान",emoji:"🧪",topics:"Chemical Reactions • Light • Life Processes"},
+{cls:"Class 10",name:"English",hi:"अंग्रेज़ी",emoji:"📚",topics:"Grammar • Reading • Writing"},
+{cls:"Class 11",name:"Physics",hi:"भौतिक विज्ञान",emoji:"⚛️",topics:"Motion • Laws of Motion • Work and Energy"},
+{cls:"Class 11",name:"Chemistry",hi:"रसायन विज्ञान",emoji:"🧫",topics:"Atomic Structure • Bonding • Equilibrium"},
+{cls:"Class 11",name:"Mathematics",hi:"गणित",emoji:"📊",topics:"Sets • Functions • Trigonometry"},
+{cls:"Class 12",name:"Physics",hi:"भौतिक विज्ञान",emoji:"💡",topics:"Electrostatics • Current • Optics"},
+{cls:"Class 12",name:"Chemistry",hi:"रसायन विज्ञान",emoji:"⚗️",topics:"Solutions • Electrochemistry • Organic Chemistry"},
+{cls:"Class 12",name:"Mathematics",hi:"गणित",emoji:"📈",topics:"Matrices • Calculus • Probability"},
+{cls:"College",name:"Computer Science",hi:"कंप्यूटर विज्ञान",emoji:"💻",topics:"Programming • Problem Solving • Databases"},
+{cls:"College",name:"English Skills",hi:"अंग्रेज़ी कौशल",emoji:"✍️",topics:"Word Formation • Grammar • Communication"}
+];
+function renderSubjects(){let cls=document.getElementById('classSelect').value,lang=document.getElementById('langSelect').value,q=document.getElementById('search').value.toLowerCase();let filtered=data.filter(x=>(cls==='all'||x.cls===cls)&&(`${x.name} ${x.hi} ${x.topics} ${x.cls}`.toLowerCase().includes(q))&&(lang==='both'||lang==='English'||lang==='Hindi'));document.getElementById('subjects').innerHTML=filtered.map(x=>`<article class="card"><span class="tag">${x.cls}</span><div class="emoji">${x.emoji}</div><h3>${x.name} / ${x.hi}</h3><p class="muted">${x.topics}</p><p>Study topics and practise regularly. / विषय पढ़ें और नियमित अभ्यास करें।</p></article>`).join('')||'<p>No subjects found / कोई विषय नहीं मिला।</p>'}
+function check(ok){document.getElementById('quizResult').textContent=ok?'Correct! / सही जवाब! 🎉':'Try again / फिर कोशिश करें।';}
+function addTask(){let input=document.getElementById('taskInput'),v=input.value.trim();if(!v)return;let tasks=JSON.parse(localStorage.getItem('scTasks')||'[]');tasks.push(v);localStorage.setItem('scTasks',JSON.stringify(tasks));input.value='';showTasks()}
+function showTasks(){let tasks=JSON.parse(localStorage.getItem('scTasks')||'[]');document.getElementById('tasks').innerHTML=tasks.map((t,i)=>`<li>${t} <button style="padding:4px 8px;margin:4px" onclick="removeTask(${i})">Done / हटाएँ</button></li>`).join('')}
+function removeTask(i){let tasks=JSON.parse(localStorage.getItem('scTasks')||'[]');tasks.splice(i,1);localStorage.setItem('scTasks',JSON.stringify(tasks));showTasks()}
+document.getElementById('year').textContent=new Date().getFullYear();renderSubjects();showTasks();
 </script>
-</body>
-</html>
+</body></html>
