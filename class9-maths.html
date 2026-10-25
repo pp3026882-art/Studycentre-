@@ -2,131 +2,478 @@
 <html lang="hi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Class 9 Maths | BHANU StudyCentre</title>
 
+<meta name="description" content="BHANU StudyCentre Class 9 Maths — गणित मञ्जरी के सभी 14 अध्याय हिंदी और English में।">
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#07152e;color:#fff;line-height:1.7}
-header{padding:18px;background:#10213d;border-bottom:1px solid #344661}
-header a{color:#ffbf36;text-decoration:none}
-main{max-width:950px;margin:auto;padding:25px 18px 50px}
-h1,h2{color:#ffbf36}
-.intro{color:#bdc9dc}
-.card{background:#10213d;border:1px solid #30415d;border-radius:13px;padding:18px;margin:15px 0}
-.card h3{margin-top:0}
-a.button{display:inline-block;background:#ffbf36;color:#07152e;padding:8px 13px;border-radius:7px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:25px;color:#bdc9dc;border-top:1px solid #30415d}
+:root {
+    --navy: #101b3d;
+    --blue: #20366b;
+    --gold: #ffbd45;
+    --cream: #fffaf0;
+    --white: #ffffff;
+    --text: #17213b;
+    --muted: #647087;
+    --border: #e5e9f2;
+    --green: #137547;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Noto Sans Devanagari", sans-serif;
+    background: #f4f6fb;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+header {
+    background: var(--navy);
+    color: white;
+    padding: 16px 5%;
+    border-bottom: 4px solid var(--gold);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    font-size: 35px;
+}
+
+.brand h2 {
+    font-size: 21px;
+    color: var(--gold);
+}
+
+.brand p {
+    font-size: 12px;
+    color: #e5e9f7;
+}
+
+.home-btn {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--navy);
+    text-decoration: none;
+    padding: 9px 17px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    color: white;
+    text-align: center;
+    padding: 42px 18px;
+}
+
+.hero h1 {
+    font-size: clamp(25px, 5vw, 38px);
+    margin-bottom: 8px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 8px auto;
+    color: #edf1ff;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 14px;
+    background: rgba(255,189,69,.15);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 6px 13px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 28px auto 45px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro h2 {
+    font-size: 25px;
+    color: var(--navy);
+}
+
+.intro p {
+    color: var(--muted);
+    margin-top: 5px;
+}
+
+.search-box {
+    margin: 22px auto 25px;
+    max-width: 650px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    background: white;
+}
+
+.search-box input:focus {
+    border-color: var(--gold);
+}
+
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.chapter-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 18px rgba(16,27,61,.06);
+    display: flex;
+    flex-direction: column;
+    transition: transform .2s, box-shadow .2s;
+}
+
+.chapter-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(16,27,61,.11);
+}
+
+.chapter-number {
+    color: #825400;
+    background: #fff1cf;
+    display: inline-block;
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+
+.chapter-card h3 {
+    color: var(--navy);
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+
+.hindi-title {
+    font-size: 16px;
+    color: #33466f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.chapter-card .description {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 17px;
+    flex-grow: 1;
+}
+
+.open-btn {
+    display: block;
+    text-align: center;
+    background: var(--navy);
+    color: white;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.open-btn:hover {
+    background: var(--blue);
+}
+
+.notice {
+    background: var(--cream);
+    border-left: 4px solid var(--gold);
+    border-radius: 9px;
+    padding: 15px;
+    margin-top: 25px;
+    color: #624a1c;
+    font-size: 14px;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    padding: 25px;
+    color: var(--muted);
+}
+
+footer {
+    background: var(--navy);
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+    border-top: 4px solid var(--gold);
+}
+
+footer strong {
+    color: var(--gold);
+}
+
+footer p {
+    font-size: 13px;
+    margin: 4px;
+}
+
+@media (max-width: 650px) {
+    .chapter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 32px 15px;
+    }
+
+    .chapter-card {
+        padding: 17px;
+    }
+
+    .brand h2 {
+        font-size: 18px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-  ☀️ <strong>BHANU StudyCentre</strong>
-  &nbsp; | &nbsp;
-  <a href="classes.html">← सभी Classes</a>
+    <div class="navbar">
+        <div class="brand">
+            <div class="logo">☀️</div>
+            <div>
+                <h2>BHANU StudyCentre</h2>
+                <p>Learn Today, Lead Tomorrow.</p>
+            </div>
+        </div>
+
+        <a class="home-btn" href="preview.html">🏠 Home</a>
+    </div>
 </header>
 
-<main>
-<h1>Class 9 Mathematics</h1>
-<h2>कक्षा 9 गणित</h2>
+<section class="hero">
+    <h1>Class 9 <span>Mathematics</span></h1>
+    <p>कक्षा 9 गणित मञ्जरी — अपनी पढ़ाई को आसान बनाएँ।</p>
+    <p>Explore all 14 chapters in Hindi and English.</p>
+    <div class="badge">📚 NCERT • Class 9 • Maths</div>
+</section>
 
-<p class="intro">
-हिंदी और English में गणित सीखें। यहाँ अध्यायों के Notes,
-उदाहरण और अभ्यास प्रश्न उपलब्ध कराए जाएँगे।
-</p>
+<main class="container">
 
-<div class="card">
-<h3>Chapter 1: Number Systems</h3>
-<p>संख्या पद्धति — परिमेय और अपरिमेय संख्याएँ, वास्तविक संख्याएँ।</p>
-<a href="class9-chapter1.html">Open Notes →</a>
-</div>
+    <div class="intro">
+        <h2>📖 All 14 Chapters | सभी 14 अध्याय</h2>
+        <p>अपना अध्याय चुनें और पढ़ाई शुरू करें।</p>
+    </div>
 
-<div class="card">
-<h3>Chapter 2: Polynomials</h3>
-<p>बहुपद — प्रकार, शून्यक और बहुपदों के उदाहरण।</p>
-<a href="class9-chapter2.html">Open Notes →</a>
-</div>
+    <div class="search-box">
+        <input
+            type="search"
+            id="chapterSearch"
+            placeholder="🔍 Search chapter / अध्याय खोजें..."
+            aria-label="Search chapters"
+        >
+    </div>
 
-<div class="card">
-<h3>Chapter 3: Coordinate Geometry</h3>
-<p>निर्देशांक ज्यामिति — Cartesian Plane और बिंदुओं के निर्देशांक।</p>
-<a href="class9-chapter3.html">Open Notes →</a>
-</div>
+    <div class="chapter-grid" id="chapterGrid">
 
-<div class="card">
-<h3>Chapter 4: Linear Equations in Two Variables</h3>
-<p>दो चरों वाले रैखिक समीकरण।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
- <a href="class9-chapter4.html">Open Notes →</a> 
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 01</span>
+            <h3>1. The Use of Coordinates</h3>
+            <p class="hindi-title">निर्देशांक का उपयोग</p>
+            <p class="description">Learn about coordinates, axes, ordered pairs and the coordinate plane.</p>
+            <a class="open-btn" href="class9-chapter1.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 5: Introduction to Euclid's Geometry</h3>
-<p>यूक्लिड की ज्यामिति का परिचय।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-  <a href="class9-chapter5.html">Open Notes →</a>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 02</span>
+            <h3>2. Introduction to Linear Polynomials</h3>
+            <p class="hindi-title">रैखिक बहुपदों का परिचय</p>
+            <p class="description">Understand linear polynomials, coefficients, values and examples.</p>
+            <a class="open-btn" href="class9-chapter2.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 6: Lines and Angles</h3>
-<p>रेखाएँ और कोण।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 03</span>
+            <h3>3. The World of Numbers</h3>
+            <p class="hindi-title">संख्याओं की दुनिया</p>
+            <p class="description">Explore number systems and important properties of numbers.</p>
+            <a class="open-btn" href="class9-chapter3.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 7: Triangles</h3>
-<p>त्रिभुज और उनके गुण।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 04</span>
+            <h3>4. Exploring Algebraic Identities</h3>
+            <p class="hindi-title">बीजीय सर्वसमिकाओं की खोज</p>
+            <p class="description">Learn algebraic identities with examples and practice questions.</p>
+            <a class="open-btn" href="class9-chapter4.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 8: Quadrilaterals</h3>
-<p>चतुर्भुज और उनके गुण।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 05</span>
+            <h3>5. Circles and Figures</h3>
+            <p class="hindi-title">वृत्त और आकृतियाँ</p>
+            <p class="description">Study circles, geometric figures and their properties.</p>
+            <a class="open-btn" href="class9-chapter5.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 9: Circles</h3>
-<p>वृत्त और उनके गुण।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 06</span>
+            <h3>6. Measuring Space: Perimeter and Area</h3>
+            <p class="hindi-title">परिमाप और क्षेत्रफल मापन</p>
+            <p class="description">Learn how to calculate perimeter and area of different shapes.</p>
+            <a class="open-btn" href="class9-chapter6.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 10: Heron's Formula</h3>
-<p>हीरोन का सूत्र और त्रिभुज का क्षेत्रफल।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 07</span>
+            <h3>7. Introduction to Probability</h3>
+            <p class="hindi-title">प्रायिकता का परिचय</p>
+            <p class="description">Discover probability through simple examples and activities.</p>
+            <a class="open-btn" href="class9-chapter7.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 11: Surface Areas and Volumes</h3>
-<p>पृष्ठीय क्षेत्रफल और आयतन।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 08</span>
+            <h3>8. Exploring Sequences and Progressions</h3>
+            <p class="hindi-title">अनुक्रम और श्रेणियाँ</p>
+            <p class="description">Find patterns and understand sequences and progressions.</p>
+            <a class="open-btn" href="class9-chapter8.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 12: Statistics</h3>
-<p>सांख्यिकी और आँकड़ों का अध्ययन।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 09</span>
+            <h3>9. Propositions and Converses</h3>
+            <p class="hindi-title">तर्क और प्रतिज्ञाएँ</p>
+            <p class="description">Explore statements, logical reasoning and converses.</p>
+            <a class="open-btn" href="class9-chapter9.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
 
-<div class="card">
-<h3>Chapter 13: Probability</h3>
-<p>प्रायिकता की मूल अवधारणाएँ।</p>
-<p>Notes जल्द जोड़े जाएँगे।</p>
-</div>
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 10</span>
+            <h3>10. Data</h3>
+            <p class="hindi-title">डेटा</p>
+            <p class="description">Learn how to collect, organise, read and interpret data.</p>
+            <a class="open-btn" href="class9-chapter10.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
+
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 11</span>
+            <h3>11. Algorithms</h3>
+            <p class="hindi-title">एल्गोरिदम</p>
+            <p class="description">Understand step-by-step instructions and basic algorithms.</p>
+            <a class="open-btn" href="class9-chapter11.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
+
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 12</span>
+            <h3>12. Quadrilaterals</h3>
+            <p class="hindi-title">चतुर्भुज</p>
+            <p class="description">Study four-sided shapes and their important properties.</p>
+            <a class="open-btn" href="class9-chapter12.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
+
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 13</span>
+            <h3>13. Linear Equations in Two Variables</h3>
+            <p class="hindi-title">दो चरों में रैखिक समीकरण</p>
+            <p class="description">Understand equations in two variables and their solutions.</p>
+            <a class="open-btn" href="class9-chapter13.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
+
+        <article class="chapter-card">
+            <span class="chapter-number">CHAPTER 14</span>
+            <h3>14. Surface Area and Volume</h3>
+            <p class="hindi-title">पृष्ठीय क्षेत्रफल और आयतन</p>
+            <p class="description">Learn surface area and volume of three-dimensional shapes.</p>
+            <a class="open-btn" href="class9-chapter14.html">📘 Open Notes / नोट्स खोलें</a>
+        </article>
+
+    </div>
+
+    <div class="no-results" id="noResults">
+        कोई अध्याय नहीं मिला। दूसरा नाम खोजकर देखें।
+    </div>
+
+    <div class="notice">
+        <strong>📌 Study Tip:</strong>
+        पहले अध्याय को ध्यान से पढ़ें, उदाहरण हल करें और फिर अभ्यास प्रश्नों को स्वयं हल करने की कोशिश करें।
+        <br>
+        <strong>ध्यान दें:</strong> सभी अध्यायों के नोट्स पेज अलग-अलग बनाए जाने हैं। जिन पेजों को अभी नहीं बनाया गया है, उनके लिंक फिलहाल नहीं खुलेंगे।
+    </div>
 
 </main>
 
 <footer>
-© <span id="year"></span> BHANU StudyCentre<br>
-Learn Today, Lead Tomorrow ☀️
+    <p><strong>☀️ BHANU StudyCentre</strong></p>
+    <p>Learn Today, Lead Tomorrow.</p>
+    <p>Class 9 Mathematics • Hindi & English</p>
 </footer>
 
 <script>
-document.getElementById("year").textContent=new Date().getFullYear();
+const searchInput = document.getElementById("chapterSearch");
+const chapterCards = document.querySelectorAll(".chapter-card");
+const noResults = document.getElementById("noResults");
+
+searchInput.addEventListener("input", function () {
+    const query = this.value.trim().toLowerCase();
+    let visibleCount = 0;
+
+    chapterCards.forEach(function (card) {
+        const text = card.innerText.toLowerCase();
+        const matches = text.includes(query);
+
+        card.style.display = matches ? "flex" : "none";
+
+        if (matches) {
+            visibleCount++;
+        }
+    });
+
+    noResults.style.display = visibleCount === 0 ? "block" : "none";
+});
 </script>
 
 </body>
-</html>
+              </html>
