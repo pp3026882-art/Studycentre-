@@ -3,587 +3,244 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Class 9 Maths Chapter 5 Euclid's Geometry notes in Hindi and English with examples and practice questions.">
-<title>Chapter 5: Euclid's Geometry | BHANU StudyCentre</title>
-
+<title>Chapter 5 | BHANU StudyCentre</title>
 <style>
-:root {
-  --navy:#10254c;
-  --blue:#2563eb;
-  --gold:#f5a623;
-  --light:#f3f6fc;
-  --green:#16803c;
-}
-* { box-sizing:border-box; }
-body {
-  margin:0;
-  font-family:Arial,sans-serif;
-  background:var(--light);
-  color:#172033;
-  line-height:1.75;
-}
-header {
-  background:var(--navy);
-  color:white;
-  text-align:center;
-  padding:24px 12px;
-  border-bottom:5px solid var(--gold);
-}
-header h1 { margin:0; font-size:27px; }
-nav {
-  background:white;
-  text-align:center;
-  padding:12px 5px;
-  box-shadow:0 2px 8px #0001;
-}
-nav a {
-  display:inline-block;
-  margin:4px 7px;
-  text-decoration:none;
-  color:var(--navy);
-  font-weight:bold;
-}
-main {
-  max-width:950px;
-  margin:22px auto;
-  padding:0 13px;
-}
-.card {
-  background:white;
-  padding:20px;
-  margin-bottom:18px;
-  border-radius:12px;
-  box-shadow:0 3px 12px #10254c12;
-  overflow-wrap:anywhere;
-}
-h2 {
-  color:var(--navy);
-  border-left:5px solid var(--gold);
-  padding-left:11px;
-}
-h3 { color:#1d4ed8; }
-.formula {
-  background:#fff7e6;
-  border-left:4px solid var(--gold);
-  padding:12px;
-  border-radius:7px;
-  margin:12px 0;
-}
-.example {
-  background:#eff6ff;
-  border-left:4px solid var(--blue);
-  padding:13px;
-  border-radius:7px;
-  margin:13px 0;
-}
-.answer {
-  background:#effcf3;
-  border-left:4px solid var(--green);
-  padding:11px;
-  border-radius:6px;
-  margin-top:9px;
-}
-table {
-  width:100%;
-  border-collapse:collapse;
-  margin:12px 0;
-}
-th,td {
-  border:1px solid #d5dbea;
-  padding:9px;
-  text-align:left;
-}
-th { background:#e8eefb; }
-details {
-  background:#f8fafc;
-  border:1px solid #dce3ef;
-  border-radius:7px;
-  padding:11px;
-  margin:10px 0;
-}
-summary {
-  cursor:pointer;
-  font-weight:bold;
-  color:var(--navy);
-}
-button {
-  background:var(--blue);
-  color:white;
-  border:0;
-  border-radius:7px;
-  padding:11px 16px;
-  cursor:pointer;
-  font-size:15px;
-}
-footer {
-  background:var(--navy);
-  color:white;
-  text-align:center;
-  padding:22px 12px;
-}
-@media(max-width:600px) {
-  header h1 { font-size:23px; }
-  .card { padding:14px; }
-  th,td { padding:6px; }
-}
+:root{--navy:#101d3a;--blue:#203d70;--gold:#ffb547;--bg:#f3f6fc}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:#18243b;line-height:1.7}
+header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;text-align:center;padding:25px 14px}
+.brand{color:var(--gold);font-weight:bold;letter-spacing:2px}
+header h1{font-size:clamp(24px,5vw,36px)}
+.container{max-width:900px;margin:auto;padding:16px}
+.card{background:white;margin:16px 0;padding:20px;border-radius:14px;box-shadow:0 4px 14px #10204012}
+h2{color:var(--blue)}
+.formula{background:#eef3ff;padding:13px;border-left:4px solid var(--blue);border-radius:7px;font-weight:bold;overflow-wrap:anywhere}
+.example{background:#f1fbf5;padding:13px;border-left:4px solid #16835c;border-radius:7px;margin:12px 0}
+.note{background:#fff5df;padding:12px;border-left:4px solid var(--gold);border-radius:7px}
+button,.btn{display:inline-block;background:var(--blue);color:white;border:0;border-radius:8px;padding:10px 14px;text-decoration:none;cursor:pointer;margin:4px}
+.answer{display:none;background:#f1fbf5;padding:10px;border-radius:7px;margin-top:8px}
+svg{max-width:100%;height:auto;display:block;margin:15px auto;background:#fafcff;border-radius:10px}
+footer{background:var(--navy);color:white;text-align:center;padding:20px}
+@media(max-width:600px){.container{padding:10px}.card{padding:15px}}
 </style>
 </head>
-
 <body>
-
 <header>
-  <h1>☀️ BHANU StudyCentre</h1>
-  <p>Learn Today, Lead Tomorrow.</p>
-  <p>Class 9 Mathematics | कक्षा 9 गणित</p>
+<div class="brand">☀ BHANU STUDYCENTRE</div>
+<h1>Chapter 5: Circles and Figures</h1>
+<h2 style="color:#ffcf83">अध्याय 5: वृत्त और आकृतियाँ</h2>
+<p>Class 9 Mathematics | कक्षा 9 गणित</p>
+<p>Learn Today, Lead Tomorrow</p>
 </header>
 
-<nav>
-  <a href="preview.html">Home</a>
-  <a href="classes.html">Classes</a>
-  <a href="class9-maths.html">Class 9 Maths</a>
-  <a href="class9-chapter1.html">Chapter 1</a>
-  <a href="class9-chapter2.html">Chapter 2</a>
-  <a href="class9-chapter3.html">Chapter 3</a>
-  <a href="class9-chapter4.html">Chapter 4</a>
-</nav>
-
-<main>
+<main class="container">
 
 <section class="card">
-  <h2>Chapter 5: Introduction to Euclid's Geometry</h2>
-  <h3>अध्याय 5: यूक्लिड की ज्यामिति का परिचय</h3>
-  <p>
-    इस अध्याय में हम Euclid, definitions, axioms, postulates और
-    ज्यामिति के कुछ मूल सिद्धांतों को समझेंगे।
-  </p>
-  <p><b>Learning goals:</b> Definitions, axioms, postulates and reasoning.</p>
+<h2>1. Introduction | परिचय</h2>
+<p><b>English:</b> Geometry is the branch of mathematics that studies points, lines, angles, shapes and their properties. Circles and other figures are important parts of geometry.</p>
+<p><b>हिन्दी:</b> ज्यामिति गणित की वह शाखा है जिसमें बिंदुओं, रेखाओं, कोणों, आकृतियों और उनके गुणों का अध्ययन किया जाता है। वृत्त तथा अन्य आकृतियाँ ज्यामिति के महत्वपूर्ण भाग हैं।</p>
 </section>
 
 <section class="card">
-  <h2>1. Who was Euclid? | यूक्लिड कौन थे?</h2>
-  <p>
-    <b>English:</b> Euclid was an ancient Greek mathematician known
-    for his systematic work on geometry.
-  </p>
-  <p>
-    <b>हिंदी:</b> यूक्लिड प्राचीन यूनान के गणितज्ञ थे। उन्हें ज्यामिति
-    के व्यवस्थित अध्ययन के लिए जाना जाता है।
-  </p>
-  <p>
-    उनकी प्रसिद्ध पुस्तक <b>Elements</b> में ज्यामिति के अनेक
-    सिद्धांतों को व्यवस्थित रूप से प्रस्तुत किया गया।
-  </p>
+<h2>2. Basic Geometrical Terms | ज्यामिति के मूल शब्द</h2>
+<p><b>Point | बिंदु:</b> A point indicates an exact position. / बिंदु किसी निश्चित स्थान को दर्शाता है।</p>
+<p><b>Line | रेखा:</b> A straight path extending endlessly in both directions. / दोनों दिशाओं में अनंत तक बढ़ने वाला सीधा मार्ग।</p>
+<p><b>Line Segment | रेखाखंड:</b> A part of a line with two endpoints. / दो अंत बिंदुओं के बीच का रेखा का भाग।</p>
+<p><b>Ray | किरण:</b> A part of a line with one endpoint that extends endlessly in one direction. / एक अंत बिंदु से शुरू होकर एक दिशा में अनंत तक जाने वाला भाग।</p>
+<p><b>Angle | कोण:</b> A figure formed by two rays with a common endpoint. / एक उभयनिष्ठ अंत बिंदु वाली दो किरणों से बनी आकृति।</p>
 </section>
 
 <section class="card">
-  <h2>2. Basic Terms | मूल शब्द</h2>
-
-  <h3>Point (बिंदु)</h3>
-  <p>
-    बिंदु किसी स्थान को दर्शाता है। आदर्श ज्यामितीय बिंदु की लंबाई,
-    चौड़ाई या मोटाई नहीं मानी जाती।
-  </p>
-
-  <h3>Line (रेखा)</h3>
-  <p>
-    रेखा दोनों दिशाओं में अनंत तक बढ़ती है। इसकी केवल लंबाई होती है,
-    चौड़ाई नहीं।
-  </p>
-
-  <h3>Line Segment (रेखाखंड)</h3>
-  <p>
-    रेखा के दो सिरों के बीच का भाग रेखाखंड कहलाता है।
-    इसकी निश्चित लंबाई होती है।
-  </p>
-
-  <h3>Plane (समतल)</h3>
-  <p>
-    समतल एक सपाट सतह का गणितीय मॉडल है, जिसे सभी दिशाओं में अनंत
-    तक विस्तृत माना जाता है।
-  </p>
+<h2>3. What Is a Circle? | वृत्त क्या है?</h2>
+<p><b>English:</b> A circle is the set of all points in a plane that are at the same distance from a fixed point.</p>
+<p><b>हिन्दी:</b> समतल में उन सभी बिंदुओं के समूह को वृत्त कहते हैं जो एक निश्चित बिंदु से समान दूरी पर होते हैं।</p>
+<div class="formula">Fixed point = Centre | निश्चित बिंदु = केंद्र</div>
+<svg viewBox="0 0 320 220" role="img" aria-label="Circle showing centre, radius and diameter">
+<circle cx="155" cy="108" r="75" fill="#dce8ff" stroke="#203d70" stroke-width="3"/>
+<line x1="155" y1="108" x2="230" y2="108" stroke="#d97706" stroke-width="3"/>
+<line x1="80" y1="108" x2="230" y2="108" stroke="#16835c" stroke-width="3"/>
+<circle cx="155" cy="108" r="4" fill="#101d3a"/>
+<text x="143" y="98" font-size="13" fill="#101d3a">O</text>
+<text x="188" y="99" font-size="13" fill="#a45c00">Radius</text>
+<text x="112" y="128" font-size="13" fill="#16835c">Diameter</text>
+</svg>
+<p><b>Centre | केंद्र:</b> The fixed point inside the circle. / वृत्त के अंदर स्थित निश्चित बिंदु।</p>
+<p><b>Radius | त्रिज्या:</b> The distance from the centre to any point on the circle. / केंद्र से वृत्त के किसी बिंदु तक की दूरी।</p>
+<p><b>Diameter | व्यास:</b> A chord passing through the centre. Its length is twice the radius. / केंद्र से गुजरने वाली जीवा व्यास कहलाती है। इसकी लंबाई त्रिज्या की दोगुनी होती है।</p>
+<div class="formula">Diameter = 2 × Radius | व्यास = 2 × त्रिज्या</div>
 </section>
 
 <section class="card">
-  <h2>3. Definitions | परिभाषाएँ</h2>
-  <p>
-    Definition किसी गणितीय शब्द या वस्तु का अर्थ स्पष्ट करती है।
-  </p>
-  <div class="example">
-    <b>Example:</b> A triangle is a closed plane figure formed by
-    three line segments.
-    <div class="answer">
-      <b>हिंदी:</b> त्रिभुज तीन रेखाखंडों से बनी एक बंद समतलीय आकृति है।
-    </div>
-  </div>
+<h2>4. Chord and Arc | जीवा और चाप</h2>
+<p><b>Chord | जीवा:</b> A line segment joining two points on a circle. / वृत्त के दो बिंदुओं को मिलाने वाला रेखाखंड।</p>
+<p><b>Arc | चाप:</b> A part of the circumference of a circle. / वृत्त की परिधि का कोई भाग।</p>
+<p><b>Important fact | महत्वपूर्ण तथ्य:</b> The diameter is the longest chord of a circle. / व्यास वृत्त की सबसे बड़ी जीवा होती है।</p>
+<div class="note">Every diameter is a chord, but every chord is not a diameter. / प्रत्येक व्यास जीवा है, लेकिन प्रत्येक जीवा व्यास नहीं होती।</div>
 </section>
 
 <section class="card">
-  <h2>4. Axioms | अभिगृहीत</h2>
-  <p>
-    Axiom ऐसे सामान्य गणितीय कथन को कहते हैं जिसे बिना प्रमाण के
-    सत्य मानकर उपयोग किया जाता है।
-  </p>
-  <p>
-    यूक्लिड की ज्यामिति में कुछ सामान्य सिद्धांतों का उपयोग विभिन्न
-    गणितीय स्थितियों में किया जाता है।
-  </p>
-
-  <div class="formula">
-    <b>Axiom 1:</b> Things which are equal to the same thing are equal to one another.<br>
-    <b>हिंदी:</b> जो वस्तुएँ एक ही वस्तु के बराबर हैं, वे आपस में भी बराबर हैं।
-  </div>
-
-  <div class="formula">
-    <b>Axiom 2:</b> If equals are added to equals, the wholes are equal.<br>
-    <b>हिंदी:</b> बराबर राशियों में बराबर राशियाँ जोड़ने पर योग बराबर होते हैं।
-  </div>
-
-  <div class="formula">
-    <b>Axiom 3:</b> If equals are subtracted from equals, the remainders are equal.<br>
-    <b>हिंदी:</b> बराबर राशियों में से बराबर राशियाँ घटाने पर शेष बराबर होते हैं।
-  </div>
-
-  <div class="formula">
-    <b>Axiom 4:</b> Things which coincide with one another are equal to one another.<br>
-    <b>हिंदी:</b> जो आकृतियाँ पूरी तरह एक-दूसरे पर मिलती हैं, वे बराबर होती हैं।
-  </div>
-
-  <div class="formula">
-    <b>Axiom 5:</b> The whole is greater than the part.<br>
-    <b>हिंदी:</b> पूर्ण भाग से बड़ा होता है।
-  </div>
+<h2>5. Circumference of a Circle | वृत्त की परिधि</h2>
+<p><b>English:</b> The circumference is the distance around the circle.</p>
+<p><b>हिन्दी:</b> वृत्त की सीमा के चारों ओर की कुल लंबाई को परिधि कहते हैं।</p>
+<div class="formula">C = 2πr</div>
+<div class="formula">C = πd</div>
+<p>Here, r = radius, d = diameter and π is approximately 3.14.</p>
+<p>यहाँ r = त्रिज्या, d = व्यास तथा π का लगभग मान 3.14 है।</p>
+<div class="example">
+<b>Example | उदाहरण:</b> Find the circumference if the radius is 7 cm. / यदि त्रिज्या 7 cm है, तो परिधि ज्ञात करें।<br>
+C = 2πr<br>
+= 2 × 22/7 × 7<br>
+= <b>44 cm</b>
+</div>
 </section>
 
 <section class="card">
-  <h2>5. Postulates | अभिधारणाएँ</h2>
-  <p>
-    Postulates ज्यामिति से संबंधित ऐसे मूल कथन हैं जिन्हें बिना
-    प्रमाण के स्वीकार करके आगे के निष्कर्ष निकाले जाते हैं।
-  </p>
-
-  <div class="formula">
-    <b>Postulate 1:</b> A straight line may be drawn from any one point to any other point.<br>
-    <b>हिंदी:</b> किसी भी एक बिंदु से किसी दूसरे बिंदु तक सीधी रेखा खींची जा सकती है।
-  </div>
-
-  <div class="formula">
-    <b>Postulate 2:</b> A terminated line can be produced indefinitely.<br>
-    <b>हिंदी:</b> किसी सीमित रेखाखंड को दोनों दिशाओं में आगे बढ़ाया जा सकता है।
-  </div>
-
-  <div class="formula">
-    <b>Postulate 3:</b> A circle can be drawn with any centre and radius.<br>
-    <b>हिंदी:</b> किसी भी केंद्र और त्रिज्या से वृत्त बनाया जा सकता है।
-  </div>
-
-  <div class="formula">
-    <b>Postulate 4:</b> All right angles are equal to one another.<br>
-    <b>हिंदी:</b> सभी समकोण एक-दूसरे के बराबर होते हैं।
-  </div>
-
-  <div class="formula">
-    <b>Postulate 5:</b> This postulate concerns the relationship between
-    a line crossing two lines and the angles formed; in the usual
-    Euclidean formulation, it leads to the parallel postulate.<br>
-    <b>हिंदी:</b> यह अभिधारणा दो रेखाओं को काटने वाली रेखा से बनने वाले
-    कोणों से संबंधित है और समांतर रेखाओं के सिद्धांत से जुड़ी है।
-  </div>
+<h2>6. Area of a Circle | वृत्त का क्षेत्रफल</h2>
+<p><b>English:</b> The area of a circle is the region enclosed by its circumference.</p>
+<p><b>हिन्दी:</b> वृत्त की परिधि से घिरे हुए भाग के माप को वृत्त का क्षेत्रफल कहते हैं।</p>
+<div class="formula">Area = πr²</div>
+<div class="example">
+<b>Example | उदाहरण:</b> Find the area of a circle with radius 7 cm.<br>
+क्षेत्रफल ज्ञात करें, यदि त्रिज्या 7 cm है।<br>
+Area = πr²<br>
+= 22/7 × 7 × 7<br>
+= <b>154 cm²</b>
+</div>
 </section>
 
 <section class="card">
-  <h2>6. Difference Between Axiom and Postulate</h2>
-  <h3>अभिगृहीत और अभिधारणा में अंतर</h3>
-  <table>
-    <tr><th>Axiom (अभिगृहीत)</th><th>Postulate (अभिधारणा)</th></tr>
-    <tr>
-      <td>सामान्य गणितीय सिद्धांत</td>
-      <td>विशेष रूप से ज्यामिति में प्रयुक्त मूल सिद्धांत</td>
-    </tr>
-    <tr>
-      <td>गणित के विभिन्न क्षेत्रों में उपयोग हो सकता है</td>
-      <td>मुख्यतः ज्यामितीय विचारों से संबंधित</td>
-    </tr>
-    <tr>
-      <td>उदाहरण: पूर्ण भाग से बड़ा है</td>
-      <td>उदाहरण: किसी भी केंद्र और त्रिज्या से वृत्त बनाया जा सकता है</td>
-    </tr>
-  </table>
-  <p class="small">
-    नोट: Axiom और postulate दोनों ऐसे कथन हैं जिन्हें संबंधित गणितीय
-    तर्क में बिना प्रमाण के स्वीकार किया जाता है।
-  </p>
+<h2>7. Types of Angles | कोणों के प्रकार</h2>
+<ul>
+<li><b>Acute Angle | न्यून कोण:</b> Less than 90°. / 90° से कम।</li>
+<li><b>Right Angle | समकोण:</b> Exactly 90°. / ठीक 90°।</li>
+<li><b>Obtuse Angle | अधिक कोण:</b> Greater than 90° but less than 180°. / 90° से अधिक लेकिन 180° से कम।</li>
+<li><b>Straight Angle | सरल कोण:</b> Exactly 180°. / ठीक 180°।</li>
+<li><b>Reflex Angle | प्रतिवर्ती कोण:</b> Greater than 180° but less than 360°. / 180° से अधिक लेकिन 360° से कम।</li>
+</ul>
 </section>
 
 <section class="card">
-  <h2>7. Solved Examples | 15 हल सहित उदाहरण</h2>
-
-  <div class="example">
-    <h3>Example 1</h3>
-    यदि a = b और b = c, तो a और c में क्या संबंध होगा?
-    <div class="answer">
-      <b>हल:</b> जो राशियाँ एक ही राशि के बराबर हैं, वे आपस में बराबर होती हैं।
-      इसलिए a = c.
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 2</h3>
-    यदि a = b = 5, तो a + 3 और b + 3 की तुलना करें।
-    <div class="answer">
-      <b>हल:</b> a + 3 = 5 + 3 = 8 और b + 3 = 5 + 3 = 8.
-      इसलिए दोनों बराबर हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 3</h3>
-    यदि x = y = 12, तो x - 4 और y - 4 ज्ञात करें।
-    <div class="answer">
-      <b>हल:</b> x - 4 = 8 और y - 4 = 8.
-      दोनों परिणाम बराबर हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 4</h3>
-    एक रेखाखंड की लंबाई 7 cm है। यदि उसके बराबर दूसरा रेखाखंड है,
-    तो उसकी लंबाई क्या होगी?
-    <div class="answer">
-      <b>हल:</b> बराबर रेखाखंडों की लंबाइयाँ बराबर होती हैं।
-      इसलिए दूसरा रेखाखंड 7 cm का है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 5</h3>
-    पूर्ण लंबाई 10 cm है और उसका एक भाग 4 cm है। क्या पूर्ण भाग से बड़ा है?
-    <div class="answer">
-      <b>हल:</b> हाँ। 10 cm > 4 cm. यह “The whole is greater than the part”
-      सिद्धांत का उदाहरण है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 6</h3>
-    यदि दो कोण 90° के हैं, तो क्या वे बराबर हैं?
-    <div class="answer">
-      <b>हल:</b> हाँ। दोनों समकोण हैं और प्रत्येक का माप 90° है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 7</h3>
-    किसी वृत्त का केंद्र O और त्रिज्या 3 cm है। वृत्त बनाने के लिए
-    किस उपकरण का उपयोग कर सकते हैं?
-    <div class="answer">
-      <b>हल:</b> परकार (Compass) की सहायता से O केंद्र और 3 cm त्रिज्या
-      लेकर वृत्त बना सकते हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 8</h3>
-    बिंदु A और B दिए हैं। क्या उनके बीच सीधी रेखा खींची जा सकती है?
-    <div class="answer">
-      <b>हल:</b> हाँ। यूक्लिड की पहली अभिधारणा के अनुसार किसी भी दो बिंदुओं
-      के बीच सीधी रेखा खींची जा सकती है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 9</h3>
-    रेखाखंड AB की लंबाई 6 cm है। उसे आगे बढ़ाने पर क्या उसकी लंबाई
-    6 cm ही रहेगी?
-    <div class="answer">
-      <b>हल:</b> नहीं। रेखाखंड AB की लंबाई 6 cm है, लेकिन उसे बढ़ाने पर
-      बनने वाली रेखा आगे अनंत तक जा सकती है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 10</h3>
-    यदि दो आकृतियाँ पूरी तरह एक-दूसरे पर रखकर मिल जाती हैं, तो
-    उन्हें क्या कहा जा सकता है?
-    <div class="answer">
-      <b>हल:</b> वे सर्वांगसम (congruent) आकृतियाँ होती हैं।
-      यह coincidence से संबंधित सिद्धांत का उदाहरण है।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 11</h3>
-    यदि a = 8 और b = 8, तो क्या a = b है?
-    <div class="answer">
-      <b>हल:</b> हाँ। दोनों का मान 8 है, इसलिए a = b.
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 12</h3>
-    यदि a = b = 15, तो a + 5 और b + 5 ज्ञात करें।
-    <div class="answer">
-      <b>हल:</b> a + 5 = 20 और b + 5 = 20.
-      दोनों बराबर हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 13</h3>
-    यदि x = y = 20, तो x - 7 और y - 7 की तुलना करें।
-    <div class="answer">
-      <b>हल:</b> x - 7 = 13 और y - 7 = 13.
-      दोनों बराबर हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 14</h3>
-    क्या प्रत्येक वर्ग एक आयत होता है?
-    <div class="answer">
-      <b>हल:</b> हाँ। वर्ग में चारों कोण 90° के होते हैं, इसलिए वह आयत
-      की परिभाषा को पूरा करता है। वर्ग की अतिरिक्त विशेषता यह है कि
-      उसकी चारों भुजाएँ बराबर होती हैं।
-    </div>
-  </div>
-
-  <div class="example">
-    <h3>Example 15</h3>
-    Axiom और Postulate में एक अंतर बताइए।
-    <div class="answer">
-      <b>हल:</b> Axiom सामान्य गणितीय सत्य होता है, जबकि Postulate
-      विशेष रूप से ज्यामिति से संबंधित मूल कथन होता है।
-    </div>
-  </div>
+<h2>8. Triangles | त्रिभुज</h2>
+<p><b>English:</b> A triangle is a closed figure with three sides, three vertices and three angles.</p>
+<p><b>हिन्दी:</b> तीन भुजाओं, तीन शीर्षों और तीन कोणों से बनी बंद आकृति त्रिभुज कहलाती है।</p>
+<div class="formula">Sum of interior angles = 180° | आंतरिक कोणों का योग = 180°</div>
+<p><b>Equilateral Triangle | समबाहु त्रिभुज:</b> All three sides are equal. / तीनों भुजाएँ बराबर होती हैं।</p>
+<p><b>Isosceles Triangle | समद्विबाहु त्रिभुज:</b> Two sides are equal. / दो भुजाएँ बराबर होती हैं।</p>
+<p><b>Scalene Triangle | विषमबाहु त्रिभुज:</b> All sides have different lengths. / तीनों भुजाओं की लंबाइयाँ अलग होती हैं।</p>
+<div class="example">
+<b>Example:</b> Two angles of a triangle are 60° and 70°. Find the third angle.<br>
+तीसरा कोण ज्ञात करें।<br>
+Third angle = 180° − (60° + 70°) = <b>50°</b>
+</div>
 </section>
 
 <section class="card">
-  <h2>8. Practice Questions | 15 अभ्यास प्रश्न</h2>
-  <p>पहले स्वयं उत्तर देने का प्रयास करें, फिर प्रश्न पर क्लिक करके हल देखें।</p>
-
-  <details>
-    <summary>Q1. यूक्लिड कौन थे?</summary>
-    <div class="answer">उत्तर: यूक्लिड प्राचीन यूनान के गणितज्ञ थे, जिन्हें ज्यामिति के व्यवस्थित अध्ययन के लिए जाना जाता है।</div>
-  </details>
-
-  <details>
-    <summary>Q2. यूक्लिड की प्रसिद्ध पुस्तक का नाम क्या है?</summary>
-    <div class="answer">उत्तर: Elements.</div>
-  </details>
-
-  <details>
-    <summary>Q3. Axiom किसे कहते हैं?</summary>
-    <div class="answer">उत्तर: ऐसा सामान्य गणितीय कथन जिसे बिना प्रमाण के सत्य मानकर उपयोग किया जाता है।</div>
-  </details>
-
-  <details>
-    <summary>Q4. Postulate किसे कहते हैं?</summary>
-    <div class="answer">उत्तर: ऐसा मूल कथन जिसे ज्यामिति में बिना प्रमाण के स्वीकार करके आगे के निष्कर्ष निकाले जाते हैं।</div>
-  </details>
-
-  <details>
-    <summary>Q5. “The whole is greater than the part” का हिंदी अर्थ लिखिए।</summary>
-    <div class="answer">उत्तर: पूर्ण भाग से बड़ा होता है।</div>
-  </details>
-
-  <details>
-    <summary>Q6. सभी समकोणों का माप कितना होता है?</summary>
-    <div class="answer">उत्तर: 90°.</div>
-  </details>
-
-  <details>
-    <summary>Q7. किसी भी केंद्र और त्रिज्या से क्या बनाया जा सकता है?</summary>
-    <div class="answer">उत्तर: वृत्त (Circle).</div>
-  </details>
-
-  <details>
-    <summary>Q8. क्या दो अलग-अलग बिंदुओं के बीच सीधी रेखा खींची जा सकती है?</summary>
-    <div class="answer">उत्तर: हाँ। यह यूक्लिड की पहली अभिधारणा है।</div>
-  </details>
-
-  <details>
-    <summary>Q9. यदि a = b = 9, तो क्या a + 2 = b + 2 होगा?</summary>
-    <div class="answer">हल: a + 2 = 11 और b + 2 = 11. इसलिए हाँ, दोनों बराबर हैं।</div>
-  </details>
-
-  <details>
-    <summary>Q10. यदि x = y = 14, तो x - 5 और y - 5 ज्ञात करें।</summary>
-    <div class="answer">हल: x - 5 = 9 और y - 5 = 9. दोनों बराबर हैं।</div>
-  </details>
-
-  <details>
-    <summary>Q11. क्या रेखाखंड की लंबाई निश्चित होती है?</summary>
-    <div class="answer">उत्तर: हाँ, रेखाखंड के दो निश्चित सिरे होते हैं, इसलिए उसकी लंबाई निश्चित होती है।</div>
-  </details>
-
-  <details>
-    <summary>Q12. क्या रेखा दोनों दिशाओं में अनंत तक बढ़ती है?</summary>
-    <div class="answer">उत्तर: हाँ, ज्यामिति में रेखा दोनों दिशाओं में अनंत तक बढ़ती है।</div>
-  </details>
-
-  <details>
-    <summary>Q13. यदि दो कोण 90° और 90° के हैं, तो क्या वे बराबर हैं?</summary>
-    <div class="answer">हल: हाँ, दोनों कोण बराबर हैं क्योंकि दोनों का माप 90° है।</div>
-  </details>
-
-  <details>
-    <summary>Q14. Definition का क्या अर्थ है?</summary>
-    <div class="answer">उत्तर: किसी गणितीय शब्द या वस्तु का अर्थ स्पष्ट करने वाला कथन Definition कहलाता है।</div>
-  </details>
-
-  <details>
-    <summary>Q15. Axiom और Postulate में एक अंतर लिखिए।</summary>
-    <div class="answer">उत्तर: Axiom सामान्य गणितीय सिद्धांत होता है, जबकि Postulate मुख्यतः ज्यामिति के मूल सिद्धांतों से संबंधित होता है।</div>
-  </details>
+<h2>9. Quadrilaterals | चतुर्भुज</h2>
+<p><b>English:</b> A quadrilateral is a closed figure with four sides.</p>
+<p><b>हिन्दी:</b> चार भुजाओं से बनी बंद आकृति चतुर्भुज कहलाती है।</p>
+<div class="formula">Sum of interior angles = 360° | आंतरिक कोणों का योग = 360°</div>
+<ul>
+<li><b>Square | वर्ग:</b> Four equal sides and four right angles. / चार बराबर भुजाएँ और चार समकोण।</li>
+<li><b>Rectangle | आयत:</b> Opposite sides equal and four right angles. / आमने-सामने की भुजाएँ बराबर और चार समकोण।</li>
+<li><b>Parallelogram | समांतर चतुर्भुज:</b> Opposite sides are parallel. / आमने-सामने की भुजाएँ समांतर होती हैं।</li>
+<li><b>Rhombus | समचतुर्भुज:</b> All four sides are equal. / चारों भुजाएँ बराबर होती हैं।</li>
+</ul>
 </section>
 
 <section class="card">
-  <h2>9. Quick Revision | त्वरित दोहराव</h2>
-  <table>
-    <tr><th>Topic</th><th>याद रखें</th></tr>
-    <tr><td>Euclid</td><td>प्राचीन यूनानी गणितज्ञ</td></tr>
-    <tr><td>Elements</td><td>यूक्लिड की प्रसिद्ध पुस्तक</td></tr>
-    <tr><td>Axiom</td><td>सामान्य गणितीय मूल कथन</td></tr>
-    <tr><td>Postulate</td><td>ज्यामिति का मूल कथन</td></tr>
-    <tr><td>Right angle</td><td>90°</td></tr>
-    <tr><td>Circle</td><td>केंद्र और त्रिज्या से निर्धारित</td></tr>
-  </table>
+<h2>10. Solved Questions | हल किए गए प्रश्न</h2>
+<div class="example">
+<b>Q1.</b> Find the diameter if the radius is 9 cm.<br>
+व्यास ज्ञात करें, यदि त्रिज्या 9 cm है।<br>
+d = 2r = 2 × 9 = <b>18 cm</b>
+</div>
+<div class="example">
+<b>Q2.</b> Find the circumference when radius = 3.5 cm. Use π = 22/7.<br>
+C = 2 × 22/7 × 3.5 = <b>22 cm</b>
+</div>
+<div class="example">
+<b>Q3.</b> Two angles of a triangle are 45° and 65°. Find the third angle.<br>
+तीसरा कोण = 180° − 45° − 65° = <b>70°</b>
+</div>
+<div class="example">
+<b>Q4.</b> Three angles of a quadrilateral are 80°, 90° and 100°. Find the fourth angle.<br>
+चौथा कोण = 360° − (80° + 90° + 100°) = <b>90°</b>
+</div>
 </section>
 
 <section class="card">
-  <h2>10. Important Exam Questions</h2>
-  <ol>
-    <li>यूक्लिड का परिचय दीजिए।</li>
-    <li>Axiom और Postulate की परिभाषा लिखिए।</li>
-    <li>यूक्लिड की पहली चार अभिधारणाएँ लिखिए।</li>
-    <li>“The whole is greater than the part” उदाहरण सहित समझाइए।</li>
-    <li>रेखा और रेखाखंड में अंतर बताइए।</li>
-    <li>Definition किसे कहते हैं?</li>
-    <li>यूक्लिड की पुस्तक Elements का महत्व बताइए।</li>
-    <li>सभी समकोण बराबर होते हैं — समझाइए।</li>
-    <li>Axiom और Postulate में अंतर लिखिए।</li>
-    <li>ज्यामिति में बिना प्रमाण के स्वीकार किए जाने वाले कथनों की आवश्यकता क्यों होती है?</li>
-  </ol>
+<h2>11. Practice Questions | अभ्यास प्रश्न</h2>
+<p>पहले स्वयं हल करें, फिर उत्तर देखें।</p>
+
+<div class="example"><b>Q1.</b> Find the diameter of a circle with radius 6 cm.
+<button onclick="toggle('a1')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a1">Diameter = 2 × 6 = 12 cm.</div></div>
+
+<div class="example"><b>Q2.</b> Find the circumference if r = 7 cm. Use π = 22/7.
+<button onclick="toggle('a2')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a2">C = 2πr = 44 cm.</div></div>
+
+<div class="example"><b>Q3.</b> Find the area if r = 7 cm. Use π = 22/7.
+<button onclick="toggle('a3')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a3">Area = πr² = 154 cm².</div></div>
+
+<div class="example"><b>Q4.</b> What is a chord? / जीवा क्या है?
+<button onclick="toggle('a4')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a4">A line segment joining two points on a circle. / वृत्त के दो बिंदुओं को मिलाने वाला रेखाखंड।</div></div>
+
+<div class="example"><b>Q5.</b> What is the sum of the interior angles of a triangle?
+<button onclick="toggle('a5')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a5">180°</div></div>
+
+<div class="example"><b>Q6.</b> What is the sum of the interior angles of a quadrilateral?
+<button onclick="toggle('a6')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a6">360°</div></div>
+
+<div class="example"><b>Q7.</b> Name a triangle with all sides equal. / तीनों बराबर भुजाओं वाले त्रिभुज का नाम बताइए।
+<button onclick="toggle('a7')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a7">Equilateral triangle / समबाहु त्रिभुज।</div></div>
+
+<div class="example"><b>Q8.</b> What is the angle of a right angle?
+<button onclick="toggle('a8')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a8">90°</div></div>
+
+<div class="example"><b>Q9.</b> A triangle has angles 50° and 60°. Find the third angle.
+<button onclick="toggle('a9')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a9">180° − 50° − 60° = 70°.</div></div>
+
+<div class="example"><b>Q10.</b> Which is the longest chord of a circle?
+<button onclick="toggle('a10')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a10">Diameter / व्यास।</div></div>
 </section>
 
 <section class="card">
-  <h2>Chapter Completed! 🎉</h2>
-  <p>
-    इस अध्याय की परिभाषाएँ, अभिगृहीत और अभिधारणाएँ याद करें।
-    अभ्यास प्रश्नों को कॉपी में लिखकर हल करने से तैयारी बेहतर होगी।
-  </p>
-  <a href="class9-maths.html">
-    <button type="button">← Back to Class 9 Maths</button>
-  </a>
+<h2>12. Quick Revision | त्वरित पुनरावृत्ति</h2>
+<div class="formula">Diameter = 2r | व्यास = 2 × त्रिज्या</div>
+<div class="formula">Circumference = 2πr | परिधि = 2πr</div>
+<div class="formula">Area = πr² | क्षेत्रफल = πr²</div>
+<div class="formula">Triangle angle sum = 180° | त्रिभुज के कोणों का योग = 180°</div>
+<div class="formula">Quadrilateral angle sum = 360° | चतुर्भुज के कोणों का योग = 360°</div>
+<div class="note">ये सामान्य परिचयात्मक नोट्स हैं। अपनी गणित मञ्जरी पुस्तक के अध्याय के सभी सटीक विषयों और अभ्यास प्रश्नों के हल जोड़ने के लिए उस अध्याय की फोटो भेजें।</div>
+</section>
+
+<section class="card">
+<h2>Explore More Chapters | अन्य अध्याय</h2>
+<a class="btn" href="class9-maths.html">All Chapters / सभी अध्याय</a>
+<a class="btn" href="class9-chapter4.html">← Chapter 4</a>
+<a class="btn" href="class9-chapter6.html">Chapter 6 →</a>
+<a class="btn" href="preview.html">Home / मुख्य पृष्ठ</a>
 </section>
 
 </main>
-
 <footer>
-  <strong>☀️ BHANU StudyCentre</strong><br>
-  Learn Today, Lead Tomorrow.<br>
-  Class 9 Mathematics | Chapter 5
+<b>☀ BHANU StudyCentre</b>
+<p>Learn Today, Lead Tomorrow</p>
 </footer>
-
+<script>
+function toggle(id){
+ const el=document.getElementById(id);
+ el.style.display=el.style.display==="block"?"none":"block";
+}
+</script>
 </body>
-    </html>
-
+</html>
