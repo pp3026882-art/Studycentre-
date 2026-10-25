@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Class 9 Maths Chapter 4 notes in Hindi and English, with solved examples, practice questions and graph.">
+<title>Chapter 4 | BHANU StudyCentre</title>
+
+<style>
+:root {
+  --navy:#10254c;
+  --blue:#2563eb;
+  --gold:#f5a623;
+  --light:#f3f6fc;
+  --green:#16803c;
+}
+* { box-sizing:border-box; }
+body {
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--light);
+  color:#172033;
+  line-height:1.75;
+}
+header {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:24px 12px;
+  border-bottom:5px solid var(--gold);
+}
+header h1 { margin:0; font-size:27px; }
+header p { margin:5px 0; }
+nav {
+  background:white;
+  padding:12px 6px;
+  text-align:center;
+  box-shadow:0 2px 8px #0001;
+}
+nav a {
+  display:inline-block;
+  margin:4px 7px;
+  text-decoration:none;
+  color:var(--navy);
+  font-weight:bold;
+}
+main {
+  max-width:950px;
+  margin:22px auto;
+  padding:0 13px;
+}
+.card {
+  background:white;
+  padding:20px;
+  margin-bottom:18px;
+  border-radius:12px;
+  box-shadow:0 3px 12px #10254c12;
+  overflow-wrap:anywhere;
+}
+h2 {
+  color:var(--navy);
+  border-left:5px solid var(--gold);
+  padding-left:11px;
+}
+h3 { color:#1d4ed8; }
+.formula {
+  background:#fff7e6;
+  border-left:4px solid var(--gold);
+  padding:12px;
+  border-radius:7px;
+  margin:12px 0;
+}
+.example {
+  background:#eff6ff;
+  border-left:4px solid var(--blue);
+  padding:13px;
+  border-radius:7px;
+  margin:13px 0;
+}
+.answer {
+  background:#effcf3;
+  border-left:4px solid var(--green);
+  padding:11px;
+  border-radius:6px;
+  margin-top:9px;
+}
+table {
+  width:100%;
+  border-collapse:collapse;
+  margin:12px 0;
+}
+th,td {
+  border:1px solid #d5dbea;
+  padding:9px;
+  text-align:center;
+}
+th { background:#e8eefb; }
+details {
+  background:#f8fafc;
+  border:1px solid #dce3ef;
+  border-radius:7px;
+  padding:11px;
+  margin:10px 0;
+}
+summary {
+  cursor:pointer;
+  font-weight:bold;
+  color:var(--navy);
+}
+button {
+  background:var(--blue);
+  color:white;
+  border:0;
+  border-radius:7px;
+  padding:11px 16px;
+  cursor:pointer;
+  font-size:15px;
+}
+.graph {
+  display:block;
+  max-width:100%;
+  height:auto;
+  background:white;
+  margin:12px auto;
+}
+.small { color:#64748b; font-size:14px; }
+footer {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:22px 12px;
+}
+@media(max-width:600px) {
+  header h1 { font-size:23px; }
+  .card { padding:14px; }
+  th,td { padding:6px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>☀️ BHANU StudyCentre</h1>
+  <p>Learn Today, Lead Tomorrow.</p>
+  <p>Class 9 Mathematics | कक्षा 9 गणित</p>
+</header>
+
+<nav>
+  <a href="preview.html">Home</a>
+  <a href="classes.html">Classes</a>
+  <a href="class9-maths.html">Class 9 Maths</a>
+  <a href="class9-chapter1.html">Chapter 1</a>
+  <a href="class9-chapter2.html">Chapter 2</a>
+  <a href="class9-chapter3.html">Chapter 3</a>
+</nav>
+
+<main>
+
+<section class="card">
+  <h2>Chapter 4: Linear Equations in Two Variables</h2>
+  <h3>दो चरों वाले रैखिक समीकरण</h3>
+  <p>
+    इस अध्याय में हम दो variables वाले linear equations को समझेंगे,
+    उनके solutions निकालेंगे और graph पर दर्शाना सीखेंगे।
+  </p>
+  <p><b>Learning goals:</b> Equation, solution pairs, tables and graphs.</p>
+</section>
+
+<section class="card">
+  <h2>1. What is an Equation? | समीकरण क्या है?</h2>
+  <p>
+    <b>English:</b> An equation is a mathematical statement that shows
+    two expressions are equal.
+  </p>
+  <p>
+    <b>हिंदी:</b> समीकरण एक गणितीय कथन है जिसमें दो गणितीय व्यंजक बराबर होते हैं।
+  </p>
+  <div class="formula">
+    Example: x + 3 = 7<br>
+    यहाँ x = 4 रखने पर समीकरण सही हो जाता है।
+  </div>
+</section>
+
+<section class="card">
+  <h2>2. What is a Linear Equation in Two Variables?</h2>
+  <h3>दो चरों वाला रैखिक समीकरण</h3>
+  <p>
+    ऐसा समीकरण जिसमें दो variables हों और प्रत्येक variable की अधिकतम
+    power 1 हो, उसे दो चरों वाला रैखिक समीकरण कहते हैं।
+  </p>
+  <div class="formula">
+    <b>Standard Form:</b><br>
+    ax + by + c = 0
+    <br><br>
+    जहाँ a, b और c वास्तविक संख्याएँ हैं तथा a और b दोनों एक साथ शून्य नहीं हैं।
+  </div>
+  <p>Examples:</p>
+  <ul>
+    <li>x + y = 5</li>
+    <li>2x + 3y = 12</li>
+    <li>3x - y = 7</li>
+    <li>y = 2x + 1</li>
+  </ul>
+  <p>
+    <b>Note:</b> x² + y = 5 दो चरों वाला रैखिक समीकरण नहीं है,
+    क्योंकि x की power 2 है।
+  </p>
+</section>
+
+<section class="card">
+  <h2>3. Variables | चर</h2>
+  <p>
+    जिन अक्षरों के मान बदल सकते हैं, उन्हें variables या चर कहते हैं।
+    उदाहरण: x और y.
+  </p>
+  <div class="formula">
+    समीकरण 2x + y = 8 में x और y variables हैं।
+  </div>
+</section>
+
+<section class="card">
+  <h2>4. Solution of an Equation | समीकरण का हल</h2>
+  <p>
+    x और y के ऐसे मानों की जोड़ी जो समीकरण को सही बनाती है,
+    उसे solution pair कहते हैं।
+  </p>
+  <div class="example">
+    <b>Example:</b> x + y = 5
+    <div class="answer">
+      यदि x = 2 और y = 3, तो x + y = 2 + 3 = 5.<br>
+      इसलिए (2, 3) इसका एक solution है।
+    </div>
+  </div>
+  <p>
+    एक linear equation in two variables के सामान्यतः अनंत solutions होते हैं।
+  </p>
+</section>
+
+<section class="card">
+  <h2>5. How to Find Solutions? | हल कैसे निकालें?</h2>
+  <p>उदाहरण: x + y = 6</p>
+  <table>
+    <tr><th>x</th><th>y</th><th>Solution Pair (x,y)</th></tr>
+    <tr><td>0</td><td>6</td><td>(0,6)</td></tr>
+    <tr><td>1</td><td>5</td><td>(1,5)</td></tr>
+    <tr><td>2</td><td>4</td><td>(2,4)</td></tr>
+    <tr><td>3</td><td>3</td><td>(3,3)</td></tr>
+    <tr><td>6</td><td>0</td><td>(6,0)</td></tr>
+  </table>
+  <p>
+    तरीका: x का कोई मान चुनें और समीकरण में रखकर y का मान निकालें।
+    अलग-अलग x के मानों से अलग-अलग solution pairs मिलते हैं।
+  </p>
+</section>
+
+<section class="card">
+  <h2>6. Graph of a Linear Equation | ग्राफ</h2>
+  <p>
+    Linear equation के solutions को coordinate plane पर points के रूप
+    में दर्शाया जा सकता है। इन points को मिलाने पर एक सीधी रेखा प्राप्त होती है।
+  </p>
+  <p>उदाहरण: x + y = 4</p>
+  <table>
+    <tr><th>x</th><th>y = 4 - x</th><th>Point</th></tr>
+    <tr><td>0</td><td>4</td><td>(0,4)</td></tr>
+    <tr><td>1</td><td>3</td><td>(1,3)</td></tr>
+    <tr><td>2</td><td>2</td><td>(2,2)</td></tr>
+    <tr><td>4</td><td>0</td><td>(4,0)</td></tr>
+  </table>
+  <canvas id="lineGraph" class="graph" width="440" height="400"
+    aria-label="Graph of x plus y equals four"></canvas>
+  <p class="small">
+    यह ग्राफ x + y = 4 को दर्शाता है। रेखा पर स्थित प्रत्येक बिंदु
+    समीकरण का एक solution है।
+  </p>
+</section>
+
+<section class="card">
+  <h2>7. Important Rules | महत्वपूर्ण नियम</h2>
+  <ul>
+    <li>दो variables वाला linear equation सामान्यतः ax + by + c = 0 के रूप में लिखा जाता है।</li>
+    <li>इसमें x और y की power 1 होती है।</li>
+    <li>एक solution एक ordered pair (x, y) होता है।</li>
+    <li>एक linear equation के अनंत solution pairs हो सकते हैं।</li>
+    <li>इसका graph एक straight line होता है।</li>
+    <li>Graph बनाने के लिए कम-से-कम दो अलग-अलग solution points ज्ञात किए जा सकते हैं।</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>8. Solved Examples | 15 हल सहित उदाहरण</h2>
+
+  <div class="example">
+    <h3>Example 1: x + y = 7</h3>
+    यदि x = 3, तो y ज्ञात करें।
+    <div class="answer">
+      x + y = 7<br>
+      3 + y = 7<br>
+      y = 7 - 3 = 4<br>
+      <b>Answer: (3, 4)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 2: 2x + y = 9</h3>
+    यदि x = 2, तो y निकालें।
+    <div class="answer">
+      2(2) + y = 9<br>
+      4 + y = 9<br>
+      y = 5<br>
+      <b>Answer: (2, 5)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 3: x + 2y = 10</h3>
+    यदि y = 3, तो x निकालें।
+    <div class="answer">
+      x + 2(3) = 10<br>
+      x + 6 = 10<br>
+      x = 4<br>
+      <b>Answer: (4, 3)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 4: 3x + y = 11</h3>
+    यदि x = 3, तो y निकालें।
+    <div class="answer">
+      3(3) + y = 11<br>
+      9 + y = 11<br>
+      y = 2<br>
+      <b>Answer: (3, 2)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 5: 2x + 3y = 12</h3>
+    जाँचें कि (3, 2) इसका solution है या नहीं।
+    <div class="answer">
+      LHS = 2(3) + 3(2) = 6 + 6 = 12.<br>
+      RHS = 12.<br>
+      LHS = RHS, इसलिए <b>(3, 2) एक solution है।</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 6: x - y = 4</h3>
+    यदि x = 7, तो y ज्ञात करें।
+    <div class="answer">
+      7 - y = 4<br>
+      -y = -3<br>
+      y = 3<br>
+      <b>Answer: (7, 3)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 7: 4x + y = 13</h3>
+    यदि x = 2, तो y निकालें।
+    <div class="answer">
+      4(2) + y = 13<br>
+      8 + y = 13<br>
+      y = 5<br>
+      <b>Answer: (2, 5)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 8: y = 2x + 1</h3>
+    यदि x = 4, तो y निकालें।
+    <div class="answer">
+      y = 2(4) + 1 = 8 + 1 = 9.<br>
+      <b>Answer: (4, 9)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 9: 5x + y = 20</h3>
+    यदि x = 3, तो y ज्ञात करें।
+    <div class="answer">
+      5(3) + y = 20<br>
+      15 + y = 20<br>
+      y = 5<br>
+      <b>Answer: (3, 5)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 10: 2x - y = 1</h3>
+    यदि x = 4, तो y निकालें।
+    <div class="answer">
+      2(4) - y = 1<br>
+      8 - y = 1<br>
+      -y = -7<br>
+      y = 7<br>
+      <b>Answer: (4, 7)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 11: x + y = 0</h3>
+    यदि x = -5, तो y ज्ञात करें।
+    <div class="answer">
+      -5 + y = 0<br>
+      y = 5<br>
+      <b>Answer: (-5, 5)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 12: 3x - 2y = 4</h3>
+    यदि x = 2, तो y निकालें।
+    <div class="answer">
+      3(2) - 2y = 4<br>
+      6 - 2y = 4<br>
+      -2y = -2<br>
+      y = 1<br>
+      <b>Answer: (2, 1)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 13: x + 3y = 12</h3>
+    यदि y = 2, तो x ज्ञात करें।
+    <div class="answer">
+      x + 3(2) = 12<br>
+      x + 6 = 12<br>
+      x = 6<br>
+      <b>Answer: (6, 2)</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 14: 2x + 5y = 16</h3>
+    जाँचें कि (3, 2) इसका solution है या नहीं।
+    <div class="answer">
+      LHS = 2(3) + 5(2) = 6 + 10 = 16.<br>
+      RHS = 16.<br>
+      इसलिए <b>(3, 2) इसका solution है।</b>
+    </div>
+  </div>
+
+  <div class="example">
+    <h3>Example 15: x + y = 8</h3>
+    इसके दो solutions लिखिए।
+    <div class="answer">
+      यदि x = 0, तो y = 8, इसलिए (0, 8).<br>
+      यदि x = 5, तो y = 3, इसलिए (5, 3).<br>
+      <b>दो solutions: (0, 8) और (5, 3).</b>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2>9. Practice Questions | 15 अभ्यास प्रश्न</h2>
+  <p>पहले स्वयं हल करें, फिर प्रश्न पर क्लिक करके उत्तर देखें।</p>
+
+  <details>
+    <summary>Q1. x + y = 9 में x = 4 हो, तो y निकालें।</summary>
+    <div class="answer">4 + y = 9, इसलिए y = 5. उत्तर: (4, 5).</div>
+  </details>
+
+  <details>
+    <summary>Q2. 2x + y = 10 में x = 3 हो, तो y निकालें।</summary>
+    <div class="answer">6 + y = 10, इसलिए y = 4. उत्तर: (3, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q3. x + 3y = 13 में y = 2 हो, तो x निकालें।</summary>
+    <div class="answer">x + 6 = 13, इसलिए x = 7. उत्तर: (7, 2).</div>
+  </details>
+
+  <details>
+    <summary>Q4. 3x + y = 14 में x = 4 हो, तो y निकालें।</summary>
+    <div class="answer">12 + y = 14, इसलिए y = 2. उत्तर: (4, 2).</div>
+  </details>
+
+  <details>
+    <summary>Q5. जाँचें कि (2, 3), x + y = 5 का solution है या नहीं।</summary>
+    <div class="answer">2 + 3 = 5. हाँ, यह solution है।</div>
+  </details>
+
+  <details>
+    <summary>Q6. जाँचें कि (1, 4), 2x + y = 8 का solution है या नहीं।</summary>
+    <div class="answer">LHS = 2(1) + 4 = 6 ≠ 8. नहीं, यह solution नहीं है।</div>
+  </details>
+
+  <details>
+    <summary>Q7. y = 3x में x = 5 हो, तो y निकालें।</summary>
+    <div class="answer">y = 3(5) = 15. उत्तर: (5, 15).</div>
+  </details>
+
+  <details>
+    <summary>Q8. x - y = 2 में x = 6 हो, तो y निकालें।</summary>
+    <div class="answer">6 - y = 2, इसलिए y = 4. उत्तर: (6, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q9. 4x + y = 17 में x = 4 हो, तो y निकालें।</summary>
+    <div class="answer">16 + y = 17, इसलिए y = 1. उत्तर: (4, 1).</div>
+  </details>
+
+  <details>
+    <summary>Q10. x + y = 6 के दो solutions लिखिए।</summary>
+    <div class="answer">x = 0 देने पर (0, 6); x = 2 देने पर (2, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q11. 2x + 2y = 12 में x = 2 हो, तो y निकालें।</summary>
+    <div class="answer">4 + 2y = 12; 2y = 8; y = 4. उत्तर: (2, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q12. 3x - y = 5 में x = 3 हो, तो y निकालें।</summary>
+    <div class="answer">9 - y = 5; -y = -4; y = 4. उत्तर: (3, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q13. क्या x² + y = 4 दो चरों वाला linear equation है?</summary>
+    <div class="answer">नहीं, क्योंकि x की power 2 है, जबकि linear equation में variables की power 1 होती है।</div>
+  </details>
+
+  <details>
+    <summary>Q14. 2x + 3y = 12 में x = 0 हो, तो y निकालें।</summary>
+    <div class="answer">3y = 12, इसलिए y = 4. उत्तर: (0, 4).</div>
+  </details>
+
+  <details>
+    <summary>Q15. x + y = 4 के ग्राफ के लिए दो points बताइए।</summary>
+    <div class="answer">x = 0 पर y = 4, इसलिए (0, 4); y = 0 पर x = 4, इसलिए (4, 0).</div>
+  </details>
+</section>
+
+<section class="card">
+  <h2>10. Quick Revision | त्वरित दोहराव</h2>
+  <table>
+    <tr><th>Concept</th><th>याद रखें</th></tr>
+    <tr><td>Standard form</td><td>ax + by + c = 0</td></tr>
+    <tr><td>Variables</td><td>x और y</td></tr>
+    <tr><td>Solution</td><td>Ordered pair (x, y)</td></tr>
+    <tr><td>Graph</td><td>Straight line</td></tr>
+    <tr><td>Solutions</td><td>सामान्यतः अनंत</td></tr>
+  </table>
+</section>
+
+<section class="card">
+  <h2>11. Important Exam Questions</h2>
+  <ol>
+    <li>दो चरों वाले रैखिक समीकरण की परिभाषा लिखिए।</li>
+    <li>ax + by + c = 0 में a, b और c का अर्थ समझाइए।</li>
+    <li>x + y = 6 के चार solutions ज्ञात कीजिए।</li>
+    <li>जाँचिए कि (2, 3), 2x + y = 7 का solution है या नहीं।</li>
+    <li>2x + y = 8 का graph बनाने के लिए solution table बनाइए।</li>
+    <li>Linear equation in two variables के graph का आकार क्या होता है?</li>
+    <li>क्या x² + y = 7 linear equation है? कारण दीजिए।</li>
+    <li>3x + 2y = 12 के दो solutions ज्ञात कीजिए।</li>
+    <li>Solution pair किसे कहते हैं?</li>
+    <li>Graph की सहायता से equation के solutions कैसे दर्शाते हैं?</li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2>Chapter Completed! 🎉</h2>
+  <p>
+    अब सभी examples और practice questions कॉपी में हल करके अभ्यास करें।
+    ग्राफ वाले प्रश्नों के लिए graph paper का उपयोग करें।
+  </p>
+  <a href="class9-maths.html">
+    <button type="button">← Back to Class 9 Maths</button>
+  </a>
+</section>
+
+</main>
+
+<footer>
+  <strong>☀️ BHANU StudyCentre</strong><br>
+  Learn Today, Lead Tomorrow.<br>
+  Class 9 Mathematics | Chapter 4
+</footer>
+
+<script>
+const canvas = document.getElementById("lineGraph");
+const ctx = canvas.getContext("2d");
+
+function drawGraph() {
+  const w = canvas.width;
+  const h = canvas.height;
+  const unit = 35;
+  const ox = 55;
+  const oy = h - 55;
+
+  ctx.clearRect(0, 0, w, h);
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, w, h);
+
+  // Grid
+  ctx.strokeStyle = "#e2e8f0";
+  ctx.lineWidth = 1;
+
+  for (let x = ox; x <= w - 15; x += unit) {
+    ctx.beginPath();
+    ctx.moveTo(x, 15);
+    ctx.lineTo(x, h - 15);
+    ctx.stroke();
+  }
+
+  for (let y = oy; y >= 15; y -= unit) {
+    ctx.beginPath();
+    ctx.moveTo(15, y);
+    ctx.lineTo(w - 15, y);
+    ctx.stroke();
+  }
+
+  // Axes
+  ctx.strokeStyle = "#10254c";
+  ctx.lineWidth = 2;
+
+  ctx.beginPath();
+  ctx.moveTo(15, oy);
+  ctx.lineTo(w - 15, oy);
+  ctx.moveTo(ox, h - 15);
+  ctx.lineTo(ox, 15);
+  ctx.stroke();
+
+  ctx.fillStyle = "#10254c";
+  ctx.font = "13px Arial";
+  ctx.fillText("X", w - 25, oy - 9);
+  ctx.fillText("Y", ox + 8, 20);
+  ctx.fillText("O", ox - 16, oy + 16);
+
+  for (let i = 1; i <= 10; i++) {
+    ctx.fillText(String(i), ox + i * unit - 4, oy + 17);
+    if (i <= 9) {
+      ctx.fillText(String(i), ox - 20, oy - i * unit + 4);
+    }
+  }
+
+  // Equation x + y = 4
+  // In screen coordinates y_screen = oy - (4 - x) * unit
+  ctx.strokeStyle = "#2563eb";
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.moveTo(ox, oy - 4 * unit);
+  ctx.lineTo(ox + 4 * unit, oy);
+  ctx.stroke();
+
+  const points = [
+    {x:0, y:4, label:"(0,4)"},
+    {x:2, y:2, label:"(2,2)"},
+    {x:4, y:0, label:"(4,0)"}
+  ];
+
+  points.forEach(p => {
+    const px = ox + p.x * unit;
+    const py = oy - p.y * unit;
+
+    ctx.fillStyle = "#f5a623";
+    ctx.beginPath();
+    ctx.arc(px, py, 5, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = "#10254c";
+    ctx.font = "12px Arial";
+    ctx.fillText(p.label, px + 7, py - 8);
+  });
+}
+
+drawGraph();
+</script>
+
+</body>
+</html>
