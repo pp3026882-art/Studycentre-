@@ -3,214 +3,338 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 1 - Number Systems | BHANU StudyCentre</title>
+<title>Chapter 1: The Use of Coordinates | BHANU StudyCentre</title>
+
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f3f6fc;color:#172033;line-height:1.7}
-header{background:#10254c;color:white;text-align:center;padding:25px 15px}
-header h1{color:#f4b942;margin:10px 0}
-nav a,.btn{display:inline-block;background:#f4b942;color:#10254c;text-decoration:none;padding:10px 14px;margin:5px;border-radius:8px;font-weight:bold}
-main{max-width:900px;margin:20px auto;padding:0 14px}
-.card{background:white;margin:18px 0;padding:20px;border-radius:14px;box-shadow:0 3px 12px #0001}
-h2{color:#10254c;border-bottom:2px solid #f4b942;padding-bottom:7px}
-h3{color:#284d83}
-.math{background:#fff8e8;padding:12px;border-left:4px solid #f4b942;border-radius:5px;overflow-wrap:anywhere}
-.example{border:1px solid #ddd;padding:14px;margin:12px 0;border-radius:9px}
-footer{background:#10254c;color:white;text-align:center;padding:22px}
-summary{cursor:pointer;font-weight:bold}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f3f5fb;color:#17213b;line-height:1.7}
+header{background:#101b3d;color:white;padding:18px;text-align:center;border-bottom:4px solid #ffbd45}
+header h1{color:#ffbd45;margin:0;font-size:24px}
+header p{margin:5px 0}
+.container{max-width:900px;width:92%;margin:22px auto}
+.card{background:white;padding:20px;margin:17px 0;border-radius:14px;box-shadow:0 4px 15px #10254c12}
+h2{color:#17336b;border-bottom:2px solid #ffbd45;padding-bottom:6px}
+h3{color:#9a6400}
+.formula{background:#fff4d7;padding:12px;border-radius:8px;font-weight:bold;overflow-wrap:anywhere}
+.example{background:#eef5ff;padding:13px;border-left:4px solid #315cb5;border-radius:7px;margin:12px 0}
+button,.btn{background:#101b3d;color:white;border:0;padding:11px 16px;border-radius:8px;cursor:pointer;text-decoration:none;display:inline-block;margin:5px}
+button:hover,.btn:hover{background:#274782}
+input{padding:10px;width:100%;max-width:400px;border:1px solid #aaa;border-radius:7px;font-size:16px}
+canvas{display:block;width:100%;max-width:500px;height:auto;border:1px solid #ccd3e3;border-radius:8px;margin:15px auto}
+.answer{display:none;background:#e7f7ec;padding:10px;border-radius:7px;margin-top:8px}
+footer{text-align:center;background:#101b3d;color:white;padding:22px;margin-top:35px}
+footer strong{color:#ffbd45}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>☀ BHANU StudyCentre</h1>
-<h2 style="color:white;border:0">Chapter 1: Number Systems</h2>
-<p>संख्या पद्धति | Hindi + English Notes</p>
-<nav>
-<a href="preview.html">Home</a>
-<a href="classes.html">All Classes</a>
-<a href="class9-maths.html">Class 9 Maths</a>
-</nav>
+<h1>☀️ BHANU StudyCentre</h1>
+<p>Learn Today, Lead Tomorrow.</p>
+<p>Class 9 Mathematics | कक्षा 9 गणित</p>
 </header>
 
-<main>
+<main class="container">
 
-<section class="card">
-<h2>1. Number Systems क्या है?</h2>
-<p>संख्याओं को उनके गुणों के आधार पर अलग-अलग समूहों में बाँटा जाता है। इन्हें Number Systems कहते हैं।</p>
-<p><b>English:</b> A number system classifies numbers into different groups according to their properties.</p>
-
-<h3>Natural Numbers (प्राकृतिक संख्याएँ)</h3>
-<p>गिनती की संख्याएँ Natural Numbers कहलाती हैं।</p>
-<div class="math">N = {1, 2, 3, 4, 5, ...}</div>
-
-<h3>Whole Numbers (पूर्ण संख्याएँ)</h3>
-<p>प्राकृतिक संख्याओं में शून्य जोड़ने पर Whole Numbers मिलते हैं।</p>
-<div class="math">W = {0, 1, 2, 3, 4, ...}</div>
-
-<h3>Integers (पूर्णांक)</h3>
-<p>ऋणात्मक संख्याएँ, शून्य और धनात्मक संख्याएँ Integers कहलाती हैं।</p>
-<div class="math">Z = {..., -3, -2, -1, 0, 1, 2, 3, ...}</div>
-
-<h3>Rational Numbers (परिमेय संख्याएँ)</h3>
-<p>वे संख्याएँ जिन्हें p/q के रूप में लिखा जा सकता है, जहाँ p और q पूर्णांक हों तथा q ≠ 0 हो।</p>
-<div class="math">उदाहरण: 1/2, 3/4, -2/5, 5 = 5/1</div>
-
-<h3>Irrational Numbers (अपरिमेय संख्याएँ)</h3>
-<p>वे वास्तविक संख्याएँ जिन्हें p/q के रूप में नहीं लिखा जा सकता, Irrational Numbers कहलाती हैं।</p>
-<div class="math">उदाहरण: √2, √3, √5, π</div>
-
-<h3>Real Numbers (वास्तविक संख्याएँ)</h3>
-<p>परिमेय और अपरिमेय संख्याएँ मिलकर Real Numbers बनाती हैं।</p>
-<div class="math">N ⊂ W ⊂ Z ⊂ Q ⊂ R</div>
-</section>
-
-<section class="card">
-<h2>2. Decimal Expansion (दशमलव प्रसार)</h2>
-<h3>Terminating Decimal (सांत दशमलव)</h3>
-<p>जिस दशमलव का अंत हो जाता है।</p>
-<div class="math">1/2 = 0.5<br>1/4 = 0.25<br>1/8 = 0.125</div>
-
-<h3>Non-terminating Recurring Decimal (असांत आवर्ती दशमलव)</h3>
-<p>जिसमें कोई अंक या अंकों का समूह बार-बार दोहराता है।</p>
-<div class="math">1/3 = 0.333...<br>2/11 = 0.181818...</div>
-
-<h3>Irrational Decimal (अपरिमेय दशमलव)</h3>
-<p>इसका दशमलव प्रसार असांत और अनावर्ती होता है।</p>
-<div class="math">√2 = 1.4142135...</div>
-</section>
-
-<section class="card">
-<h2>3. Laws of Exponents (घातांक के नियम)</h2>
-<div class="math">1. aᵐ × aⁿ = aᵐ⁺ⁿ</div>
-<div class="math">2. aᵐ ÷ aⁿ = aᵐ⁻ⁿ, जहाँ a ≠ 0</div>
-<div class="math">3. (aᵐ)ⁿ = aᵐⁿ</div>
-<div class="math">4. a⁰ = 1, जहाँ a ≠ 0</div>
-<div class="math">5. a⁻ᵐ = 1/aᵐ, जहाँ a ≠ 0</div>
-<div class="math">6. aᵐ/ⁿ = ⁿ√(aᵐ), जहाँ यह परिभाषित हो</div>
-</section>
-
-<section class="card">
-<h2>4. Ten Solved Examples (10 हल किए हुए उदाहरण)</h2>
-
-<div class="example">
-<h3>Example 1: 7 किस प्रकार की संख्या है?</h3>
-<p>7 एक Natural Number है। यह Whole Number, Integer, Rational और Real Number भी है।</p>
-<div class="math">7 ∈ N, W, Z, Q, R</div>
-<b>उत्तर:</b> प्राकृतिक, पूर्ण, पूर्णांक, परिमेय और वास्तविक संख्या।
+<div class="card">
+<h2>Chapter 1: The Use of Coordinates</h2>
+<h3>अध्याय 1: निर्देशांक का उपयोग</h3>
+<p><b>Learning Objective / सीखने का उद्देश्य:</b></p>
+<p>To understand coordinates, the coordinate plane, ordered pairs and how to locate points.</p>
+<p>निर्देशांकों, निर्देशांक तल, क्रमित युग्म तथा बिंदुओं की स्थिति को समझना।</p>
 </div>
 
-<div class="example">
-<h3>Example 2: क्या 3/5 परिमेय संख्या है?</h3>
-<p>परिमेय संख्या p/q के रूप में होती है, जहाँ p और q पूर्णांक तथा q ≠ 0 हो।</p>
-<div class="math">3/5 में p = 3 और q = 5</div>
-<b>उत्तर:</b> हाँ, 3/5 परिमेय संख्या है।
-</div>
+<div class="card">
+<h2>1. What are Coordinates? | निर्देशांक क्या हैं?</h2>
+<p><b>English:</b> Coordinates are numbers used to describe the exact position of a point on a plane.</p>
+<p><b>हिंदी:</b> निर्देशांक वे संख्याएँ हैं जिनकी सहायता से समतल पर किसी बिंदु की सही स्थिति बताई जाती है।</p>
 
 <div class="example">
-<h3>Example 3: √49 का मान ज्ञात करो।</h3>
-<div class="math">√49 = √(7 × 7) = 7</div>
-<b>उत्तर:</b> 7
+<b>Example / उदाहरण:</b><br>
+The point (3, 2) means move 3 units right and 2 units up from the origin.<br>
+बिंदु (3, 2) का अर्थ है मूल बिंदु से 3 इकाई दाईं ओर और 2 इकाई ऊपर जाना।
+</div>
 </div>
 
-<div class="example">
-<h3>Example 4: √2 परिमेय है या अपरिमेय?</h3>
-<p>√2 को दो पूर्णांकों के अनुपात में ठीक-ठीक नहीं लिखा जा सकता। इसका दशमलव प्रसार असांत और अनावर्ती है।</p>
-<b>उत्तर:</b> अपरिमेय संख्या।
-</div>
+<div class="card">
+<h2>2. Coordinate Plane | निर्देशांक तल</h2>
+<p>The coordinate plane has two number lines that meet at right angles.</p>
+<p>निर्देशांक तल में दो संख्या रेखाएँ एक-दूसरे को समकोण पर काटती हैं।</p>
 
-<div class="example">
-<h3>Example 5: 1/8 का दशमलव रूप लिखो।</h3>
-<div class="math">1 ÷ 8 = 0.125</div>
-<b>उत्तर:</b> 0.125, एक सांत दशमलव।
-</div>
-
-<div class="example">
-<h3>Example 6: 1/3 का दशमलव रूप लिखो।</h3>
-<div class="math">1 ÷ 3 = 0.3333...</div>
-<b>उत्तर:</b> 0.333..., एक असांत आवर्ती दशमलव।
-</div>
-
-<div class="example">
-<h3>Example 7: 2³ × 2⁴ सरल करो।</h3>
-<p>नियम: aᵐ × aⁿ = aᵐ⁺ⁿ</p>
-<div class="math">2³ × 2⁴ = 2⁷ = 128</div>
-<b>उत्तर:</b> 128
-</div>
-
-<div class="example">
-<h3>Example 8: 5⁶ ÷ 5² सरल करो।</h3>
-<p>नियम: aᵐ ÷ aⁿ = aᵐ⁻ⁿ</p>
-<div class="math">5⁶ ÷ 5² = 5⁴ = 625</div>
-<b>उत्तर:</b> 625
-</div>
-
-<div class="example">
-<h3>Example 9: (3²)³ सरल करो।</h3>
-<p>नियम: (aᵐ)ⁿ = aᵐⁿ</p>
-<div class="math">(3²)³ = 3⁶ = 729</div>
-<b>उत्तर:</b> 729
-</div>
-
-<div class="example">
-<h3>Example 10: 2⁻³ का मान ज्ञात करो।</h3>
-<p>नियम: a⁻ᵐ = 1/aᵐ</p>
-<div class="math">2⁻³ = 1/2³ = 1/8</div>
-<b>उत्तर:</b> 1/8
-</div>
-</section>
-
-<section class="card">
-<h2>5. Practice Questions (अभ्यास प्रश्न)</h2>
-<ol>
-<li>क्या 0 एक प्राकृतिक संख्या है?</li>
-<li>√81 का मान ज्ञात करो।</li>
-<li>√7 परिमेय है या अपरिमेय?</li>
-<li>3/8 का दशमलव रूप लिखो।</li>
-<li>3² × 3³ सरल करो।</li>
-<li>2⁷ ÷ 2³ सरल करो।</li>
-<li>5⁻² का मान ज्ञात करो।</li>
-<li>0.272727... परिमेय है या अपरिमेय?</li>
-<li>4⁰ का मान ज्ञात करो।</li>
-<li>(2³)² सरल करो।</li>
-</ol>
-
-<details>
-<summary>उत्तर देखने के लिए यहाँ दबाएँ</summary>
-<ol>
-<li>नहीं; सामान्यतः प्राकृतिक संख्याएँ 1 से शुरू होती हैं।</li>
-<li>9</li>
-<li>अपरिमेय</li>
-<li>0.375</li>
-<li>3⁵ = 243</li>
-<li>2⁴ = 16</li>
-<li>1/25</li>
-<li>परिमेय संख्या</li>
-<li>1</li>
-<li>2⁶ = 64</li>
-</ol>
-</details>
-</section>
-
-<section class="card">
-<h2>6. Quick Revision (झटपट दोहराएँ)</h2>
 <ul>
-<li>Natural Numbers: 1, 2, 3, ...</li>
-<li>Whole Numbers: 0, 1, 2, 3, ...</li>
-<li>Integers: ..., -2, -1, 0, 1, 2, ...</li>
-<li>Rational Number: p/q, जहाँ q ≠ 0</li>
-<li>Irrational Number: असांत और अनावर्ती दशमलव</li>
-<li>Real Numbers में Rational और Irrational दोनों आते हैं।</li>
+<li><b>X-axis (क्षैतिज अक्ष):</b> The horizontal number line / आड़ी संख्या रेखा।</li>
+<li><b>Y-axis (ऊर्ध्वाधर अक्ष):</b> The vertical number line / खड़ी संख्या रेखा।</li>
+<li><b>Origin (मूल बिंदु):</b> The intersection of both axes, (0, 0) / दोनों अक्षों का मिलन बिंदु।</li>
 </ul>
-<p>ये सामान्य अध्ययन नोट्स हैं। अपनी NCERT किताब के अध्याय से विषयों का मिलान अवश्य करें।</p>
-<a class="btn" href="class9-maths.html">← Back to Class 9 Maths</a>
-</section>
+
+<canvas id="graph" width="500" height="420" aria-label="Coordinate plane graph"></canvas>
+<p>ऊपर के ग्राफ में किसी बिंदु का स्थान देखने के लिए नीचे x और y के मान भरें।</p>
+
+<label for="xval">X value / x का मान</label>
+<input id="xval" type="number" value="3" min="-5" max="5">
+<br><br>
+<label for="yval">Y value / y का मान</label>
+<input id="yval" type="number" value="2" min="-4" max="4">
+<br>
+<button onclick="plotPoint()">Plot Point / बिंदु दिखाएँ</button>
+<p id="pointMessage" aria-live="polite"></p>
+</div>
+
+<div class="card">
+<h2>3. Ordered Pair | क्रमित युग्म</h2>
+<p>A point is written as (x, y). The first number represents the horizontal position, and the second number represents the vertical position.</p>
+<p>किसी बिंदु को (x, y) के रूप में लिखते हैं। पहली संख्या क्षैतिज स्थिति और दूसरी संख्या ऊर्ध्वाधर स्थिति बताती है।</p>
+
+<div class="formula">(x, y) = (horizontal position, vertical position)</div>
+
+<div class="example">
+<b>Example 1:</b> (4, 1)<br>
+Move 4 units right and 1 unit up.<br>
+4 इकाई दाईं ओर और 1 इकाई ऊपर जाएँ।
+</div>
+
+<div class="example">
+<b>Example 2:</b> (-2, 3)<br>
+Move 2 units left and 3 units up.<br>
+2 इकाई बाईं ओर और 3 इकाई ऊपर जाएँ।
+</div>
+
+<div class="example">
+<b>Example 3:</b> (2, -3)<br>
+Move 2 units right and 3 units down.<br>
+2 इकाई दाईं ओर और 3 इकाई नीचे जाएँ।
+</div>
+</div>
+
+<div class="card">
+<h2>4. Four Quadrants | चार चतुर्थांश</h2>
+<p>The x-axis and y-axis divide the plane into four regions called quadrants.</p>
+<p>x-अक्ष और y-अक्ष समतल को चार भागों में बाँटते हैं, जिन्हें चतुर्थांश कहते हैं।</p>
+
+<ul>
+<li><b>First Quadrant (I):</b> (+, +) — x positive, y positive.</li>
+<li><b>Second Quadrant (II):</b> (-, +) — x negative, y positive.</li>
+<li><b>Third Quadrant (III):</b> (-, -) — x negative, y negative.</li>
+<li><b>Fourth Quadrant (IV):</b> (+, -) — x positive, y negative.</li>
+</ul>
+
+<div class="formula">
+I: (+,+) &nbsp; II: (-,+)<br>
+III: (-,-) &nbsp; IV: (+,-)
+</div>
+
+<p><b>Note:</b> A point on either axis does not lie in any quadrant.</p>
+<p><b>ध्यान दें:</b> अक्ष पर स्थित बिंदु किसी भी चतुर्थांश में नहीं होता।</p>
+</div>
+
+<div class="card">
+<h2>5. Solved Examples | हल किए हुए उदाहरण</h2>
+
+<div class="example">
+<b>Example 1:</b> Write the coordinates of a point 5 units right and 2 units up from the origin.<br>
+<b>Solution:</b> Right means positive x; up means positive y.<br>
+<b>Answer:</b> (5, 2)
+</div>
+
+<div class="example">
+<b>Example 2:</b> In which quadrant is (-3, 4)?<br>
+<b>Solution:</b> x is negative and y is positive.<br>
+<b>Answer:</b> Second quadrant / द्वितीय चतुर्थांश।
+</div>
+
+<div class="example">
+<b>Example 3:</b> In which quadrant is (-2, -5)?<br>
+<b>Solution:</b> Both coordinates are negative.<br>
+<b>Answer:</b> Third quadrant / तृतीय चतुर्थांश।
+</div>
+
+<div class="example">
+<b>Example 4:</b> What are the coordinates of the origin?<br>
+<b>Answer:</b> (0, 0)
+</div>
+
+<div class="example">
+<b>Example 5:</b> A point is 4 units left and 3 units down. Write its coordinates.<br>
+<b>Answer:</b> (-4, -3)
+</div>
+
+<div class="example">
+<b>Example 6:</b> In which quadrant is (6, -1)?<br>
+<b>Answer:</b> Fourth quadrant / चतुर्थ चतुर्थांश।
+</div>
+
+<div class="example">
+<b>Example 7:</b> Is (0, 4) in a quadrant?<br>
+<b>Answer:</b> No. It lies on the y-axis / यह y-अक्ष पर है।
+</div>
+
+<div class="example">
+<b>Example 8:</b> Which coordinate is written first in (x, y)?<br>
+<b>Answer:</b> The x-coordinate / x-निर्देशांक।
+</div>
+</div>
+
+<div class="card">
+<h2>6. Practice Questions | अभ्यास प्रश्न</h2>
+<p>पहले प्रश्न स्वयं हल करें। फिर उत्तर देखने के लिए बटन दबाएँ।</p>
+
+<p><b>Q1.</b> What are the coordinates of the origin?</p>
+<button onclick="showAnswer('a1')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a1">(0, 0)</div>
+
+<p><b>Q2.</b> In which quadrant is (3, 5)?</p>
+<button onclick="showAnswer('a2')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a2">First quadrant / प्रथम चतुर्थांश।</div>
+
+<p><b>Q3.</b> In which quadrant is (-4, 2)?</p>
+<button onclick="showAnswer('a3')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a3">Second quadrant / द्वितीय चतुर्थांश।</div>
+
+<p><b>Q4.</b> In which quadrant is (-2, -6)?</p>
+<button onclick="showAnswer('a4')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a4">Third quadrant / तृतीय चतुर्थांश।</div>
+
+<p><b>Q5.</b> In which quadrant is (7, -3)?</p>
+<button onclick="showAnswer('a5')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a5">Fourth quadrant / चतुर्थ चतुर्थांश।</div>
+
+<p><b>Q6.</b> Write the point 2 units left and 4 units up.</p>
+<button onclick="showAnswer('a6')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a6">(-2, 4)</div>
+
+<p><b>Q7.</b> Does (0, -5) lie in a quadrant?</p>
+<button onclick="showAnswer('a7')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a7">No, it lies on the y-axis / यह y-अक्ष पर है।</div>
+
+<p><b>Q8.</b> What does the first coordinate in (x, y) represent?</p>
+<button onclick="showAnswer('a8')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a8">Horizontal position / क्षैतिज स्थिति।</div>
+
+<p><b>Q9.</b> Write coordinates for 3 units right and 2 units down.</p>
+<button onclick="showAnswer('a9')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a9">(3, -2)</div>
+
+<p><b>Q10.</b> On which axis does (5, 0) lie?</p>
+<button onclick="showAnswer('a10')">Show Answer / उत्तर देखें</button>
+<div class="answer" id="a10">X-axis / x-अक्ष।</div>
+</div>
+
+<div class="card">
+<h2>7. Quick Revision | त्वरित दोहराव</h2>
+<ul>
+<li>Coordinates show the position of a point. / निर्देशांक बिंदु की स्थिति बताते हैं।</li>
+<li>The origin is (0, 0). / मूल बिंदु (0, 0) है।</li>
+<li>An ordered pair is written as (x, y). / क्रमित युग्म (x, y) होता है।</li>
+<li>The x-coordinate is written first. / पहले x-निर्देशांक लिखा जाता है।</li>
+<li>The y-coordinate is written second. / दूसरे स्थान पर y-निर्देशांक होता है।</li>
+<li>There are four quadrants. / चार चतुर्थांश होते हैं।</li>
+<li>Points on the axes are not in any quadrant. / अक्षों पर स्थित बिंदु किसी चतुर्थांश में नहीं होते।</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Chapter Navigation | अध्याय नेविगेशन</h2>
+<a class="btn" href="class9-maths.html">📚 All Chapters / सभी अध्याय</a>
+<a class="btn" href="class9-chapter2.html">Next Chapter → / अगला अध्याय</a>
+</div>
 
 </main>
+
 <footer>
-<p>☀ BHANU StudyCentre</p>
+<strong>☀️ BHANU StudyCentre</strong>
 <p>Learn Today, Lead Tomorrow.</p>
+<p>Class 9 Mathematics • Chapter 1</p>
 </footer>
 
+<script>
+const canvas = document.getElementById("graph");
+const ctx = canvas.getContext("2d");
+
+function drawGraph(px = null, py = null) {
+    const w = canvas.width, h = canvas.height;
+    const ox = w / 2, oy = h / 2;
+    const scale = 35;
+
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, w, h);
+
+    ctx.strokeStyle = "#e3e8f2";
+    ctx.lineWidth = 1;
+
+    for (let x = 0; x <= w; x += scale) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, h);
+        ctx.stroke();
+    }
+
+    for (let y = 0; y <= h; y += scale) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(w, y);
+        ctx.stroke();
+    }
+
+    ctx.strokeStyle = "#17213b";
+    ctx.lineWidth = 2;
+
+    ctx.beginPath();
+    ctx.moveTo(15, oy);
+    ctx.lineTo(w - 12, oy);
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.moveTo(ox, h - 12);
+    ctx.lineTo(ox, 12);
+    ctx.stroke();
+
+    ctx.fillStyle = "#17213b";
+    ctx.font = "14px Arial";
+    ctx.fillText("X", w - 25, oy - 10);
+    ctx.fillText("Y", ox + 9, 20);
+    ctx.fillText("O", ox + 7, oy + 17);
+
+    if (px !== null && py !== null) {
+        const x = ox + px * scale;
+        const y = oy - py * scale;
+
+        if (x >= 0 && x <= w && y >= 0 && y <= h) {
+            ctx.fillStyle = "#d62828";
+            ctx.beginPath();
+            ctx.arc(x, y, 6, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.font = "bold 15px Arial";
+            ctx.fillText("(" + px + ", " + py + ")", x + 9, y - 9);
+        }
+    }
+}
+
+function plotPoint() {
+    const x = Number(document.getElementById("xval").value);
+    const y = Number(document.getElementById("yval").value);
+
+    if (!Number.isInteger(x) || !Number.isInteger(y) ||
+        x < -6 || x > 6 || y < -5 || y > 5) {
+        document.getElementById("pointMessage").textContent =
+            "कृपया x के लिए -6 से 6 और y के लिए -5 से 5 के बीच पूर्णांक भरें।";
+        return;
+    }
+
+    drawGraph(x, y);
+    document.getElementById("pointMessage").textContent =
+        "Point / बिंदु: (" + x + ", " + y + ")";
+}
+
+function showAnswer(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === "block" ? "none" : "block";
+}
+
+drawGraph(3, 2);
+</script>
+
 </body>
-  </html>
+</html>
