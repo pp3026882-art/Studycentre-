@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="BHANU StudyCentre - Notes, Online Quiz, Video Lectures and AI Learning.">
+
+<title>BHANU StudyCentre 2.0 | Learn Today, Lead Tomorrow</title>
+
+<style>
+:root {
+  --navy: #0b1535;
+  --navy2: #142653;
+  --gold: #ffc857;
+  --orange: #ff9f43;
+  --white: #ffffff;
+  --light: #f4f6fc;
+  --text: #17213b;
+  --muted: #aebbd5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--light);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.topbar {
+  background: #070d22;
+  color: #e4eaf8;
+  text-align: center;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+
+header {
+  background: var(--navy);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid var(--gold);
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 13px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 49px;
+  height: 49px;
+  background: var(--gold);
+  color: var(--navy);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 29px;
+  border: 3px solid white;
+}
+
+.brand h1 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.brand small {
+  color: var(--gold);
+  font-size: 11px;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navlinks a {
+  color: white;
+  font-size: 14px;
+}
+
+.navlinks a:hover {
+  color: var(--gold);
+}
+
+.menu-btn {
+  display: none;
+  background: transparent;
+  color: white;
+  border: 1px solid #526184;
+  border-radius: 8px;
+  padding: 7px 10px;
+}
+
+.hero {
+  background:
+    radial-gradient(circle at 85% 15%, #354c80 0, transparent 28%),
+    linear-gradient(130deg, #0b1535, #142653 70%, #243765);
+  color: white;
+  overflow: hidden;
+}
+
+.hero-inner {
+  max-width: 1200px;
+  margin: auto;
+  padding: 75px 22px 85px;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.badge {
+  display: inline-block;
+  color: var(--gold);
+  border: 1px solid #786a45;
+  background: #ffffff0b;
+  padding: 7px 13px;
+  border-radius: 30px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: clamp(35px, 5vw, 57px);
+  line-height: 1.13;
+  margin-bottom: 20px;
+}
+
+.hero h2 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: #d0d9ed;
+  max-width: 590px;
+  margin-bottom: 25px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  border: 0;
+  display: inline-block;
+  padding: 12px 19px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid #8796b8;
+  background: transparent;
+}
+
+.hero-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 260px;
+}
+
+.sun-orbit {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ffffff40;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.sun-orbit::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px dashed #ffffff55;
+  border-radius: 50%;
+}
+
+.sun {
+  font-size: 100px;
+  filter: drop-shadow(0 0 25px #ffc85770);
+}
+
+.floating {
+  position: absolute;
+  background: white;
+  color: var(--navy);
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px #0003;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.f1 {
+  top: 15px;
+  right: -30px;
+}
+
+.f2 {
+  bottom: 25px;
+  left: -35px;
+}
+
+.stats {
+  max-width: 1050px;
+  margin: -30px auto 0;
+  position: relative;
+  padding: 0 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.stat {
+  background: white;
+  padding: 20px 10px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px #12244a0c;
+}
+
+.stat strong {
+  display: block;
+  color: #172d5c;
+  font-size: 25px;
+}
+
+.stat span {
+  font-size: 13px;
+  color: #667085;
+}
+
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 65px 20px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #b07800;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-head h2 {
+  color: var(--navy);
+  font-size: clamp(27px, 4vw, 37px);
+  margin: 8px 0;
+}
+
+.section-head p {
+  color: #68738a;
+}
+
+.searchbox {
+  max-width: 570px;
+  margin: 22px auto 30px;
+  display: flex;
+  background: white;
+  padding: 7px;
+  border: 1px solid #e0e5ef;
+  border-radius: 13px;
+  box-shadow: 0 5px 20px #10254c09;
+}
+
+.searchbox input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: none;
+  padding: 11px;
+  background: transparent;
+}
+
+.searchbox button {
+  background: var(--navy);
+  color: white;
+  border: 0;
+  padding: 10px 16px;
+  border-radius: 9px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border: 1px solid #e7eaf2;
+  border-radius: 16px;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 30px #15295112;
+  border-color: #edc96f;
+}
+
+.card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 13px;
+  background: #fff3d1;
+  display: grid;
+  place-items: center;
+  font-size: 27px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  color: var(--navy);
+  font-size: 19px;
+  margin-bottom: 7px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #68738a;
+  margin-bottom: 15px;
+}
+
+.card-link {
+  color: #214c9a;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.dark-section {
+  background: var(--navy);
+  color: white;
+}
+
+.dark-section .section-head h2 {
+  color: white;
+}
+
+.dark-section .section-head p {
+  color: var(--muted);
+}
+
+.dark-section .card {
+  background: var(--navy2);
+  border-color: #31436b;
+}
+
+.dark-section .card h3 {
+  color: white;
+}
+
+.dark-section .card p {
+  color: #c1cce1;
+}
+
+.dark-section .card-link {
+  color: var(--gold);
+}
+
+.ai-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.ai-info h2 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.ai-info p {
+  color: #c2cee4;
+  margin-bottom: 20px;
+}
+
+.ai-box {
+  background: white;
+  color: var(--text);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px #0002;
+}
+
+.ai-head {
+  background: #f0f3fb;
+  padding: 17px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-bottom: 1px solid #e3e7f0;
+}
+
+.ai-avatar {
+  background: var(--navy);
+  color: var(--gold);
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 22px;
+}
+
+.ai-head small {
+  display: block;
+  color: #16803d;
+}
+
+.ai-chat {
+  padding: 18px;
+  min-height: 170px;
+  max-height: 260px;
+  overflow-y: auto;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.bot {
+  background: #f0f3fa;
+  margin-right: 15px;
+}
+
+.user {
+  background: #e4edff;
+  margin-left: 15px;
+}
+
+.ai-input {
+  padding: 12px;
+  border-top: 1px solid #e3e7f0;
+  display: flex;
+  gap: 8px;
+}
+
+.ai-input input {
+  min-width: 0;
+  flex: 1;
+  padding: 11px;
+  border: 1px solid #d7dce8;
+  border-radius: 9px;
+  outline-color: #9cb7f6;
+}
+
+.ai-input button {
+  background: var(--navy);
+  color: white;
+  border: 0;
+  padding: 10px 14px;
+  border-radius: 9px;
+}
+
+.ai-note {
+  font-size: 11px;
+  color: #7a8498;
+  padding: 0 14px 13px;
+}
+
+.quiz-box {
+  background: white;
+  max-width: 700px;
+  margin: auto;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 8px 30px #10254c0d;
+}
+
+.quiz-box h3 {
+  margin-bottom: 14px;
+  color: var(--navy);
+}
+
+.quiz-option {
+  display: block;
+  width: 100%;
+  padding: 13px;
+  margin: 9px 0;
+  background: #f5f7fc;
+  border: 1px solid #e0e5ef;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.quiz-option:hover {
+  border-color: #e2b542;
+  background: #fff9e8;
+}
+
+.quiz-option:disabled {
+  cursor: default;
+  color: var(--text);
+}
+
+#quizResult {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background: #070d22;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+.footer-inner {
+  max-width: 1150px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 30px;
+}
+
+footer h3, footer h4 {
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+footer p, footer a {
+  color: #bdc8dd;
+  font-size: 13px;
+}
+
+footer a {
+  display: block;
+  margin: 6px 0;
+}
+
+.copyright {
+  border-top: 1px solid #273453;
+  max-width: 1150px;
+  margin: 25px auto 0;
+  padding-top: 18px;
+  text-align: center;
+  color: #96a4c0;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr 0.7fr;
+  }
+
+  .ai-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .nav {
+    flex-wrap: wrap;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .navlinks {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 8px 0;
+  }
+
+  .navlinks.open {
+    display: flex;
+  }
+
+  .navlinks a {
+    padding: 10px 4px;
+    width: 100%;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr;
+    padding: 50px 22px 65px;
+  }
+
+  .hero-art {
+    min-height: 220px;
+  }
+
+  .sun-orbit {
+    width: 200px;
+    height: 200px;
+  }
+
+  .sun {
+    font-size: 80px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    margin-top: -18px;
+  }
+
+  .stat {
+    padding: 14px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 48px 17px;
+  }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  ☀️ Welcome to BHANU StudyCentre 2.0 — Your Learning Journey Starts Here!
+</div>
+
+<header>
+  <nav class="nav">
+    <a class="brand" href="#home" aria-label="BHANU StudyCentre Home">
+      <div class="logo">☀</div>
+      <div>
+        <h1>BHANU StudyCentre</h1>
+        <small>Learn Today, Lead Tomorrow.</small>
+      </div>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-expanded="false">
+      ☰ Menu
+    </button>
+
+    <div class="navlinks" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#classes">Classes</a>
+      <a href="#resources">Resources</a>
+      <a href="#ai">AI Tutor</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+
+    <div>
+      <span class="badge">✦ YOUR SMART LEARNING PARTNER</span>
+
+      <h2>Learn Smarter.<br>Dream Bigger.<br><span>Achieve More.</span></h2>
+
+      <p>
+        पढ़ाई को आसान बनाओ! Explore study notes, practice questions,
+        interactive quizzes and smart learning tools — all in one place.
+      </p>
+
+      <div class="actions">
+        <a href="#classes" class="btn btn-gold">Explore Classes →</a>
+        <a href="#ai" class="btn btn-outline">Explore AI Tutor ✨</a>
+      </div>
+    </div>
+
+    <div class="hero-art">
+      <div class="sun-orbit">
+        <div class="sun">☀️</div>
+        <div class="floating f1">📚 Smart Learning</div>
+        <div class="floating f2">🎯 Your Goals</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stat">
+    <strong>9–12</strong>
+    <span>Classes to Explore</span>
+  </div>
+  <div class="stat">
+    <strong>24/7*</strong>
+    <span>Learn at Your Pace</span>
+  </div>
+  <div class="stat">
+    <strong>∞</strong>
+    <span>Possibilities to Learn</span>
+  </div>
+</div>
+
+<section class="section" id="classes">
+  <div class="section-head">
+    <span class="eyebrow">Choose Your Journey</span>
+    <h2>Explore Your Classes</h2>
+    <p>अपनी कक्षा चुनो और पढ़ाई शुरू करो।</p>
+  </div>
+
+  <div class="searchbox">
+    <input id="classSearch" type="search"
+      placeholder="Search class or subject..."
+      aria-label="Search classes and subjects">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <div class="grid" id="classGrid">
+
+    <article class="card searchable" data-search="class 9 ninth maths science english hindi social science">
+      <div class="card-icon">📘</div>
+      <h3>Class 9</h3>
+      <p>Maths, Science, English, Hindi and Social Science.</p>
+      <a class="card-link" href="classes.html">Explore Class 9 →</a>
+    </article>
+
+    <article class="card searchable" data-search="class 10 tenth maths science english hindi social science">
+      <div class="card-icon">📗</div>
+      <h3>Class 10</h3>
+      <p>Study material and exam practice for Class 10.</p>
+      <a class="card-link" href="classes.html">Explore Class 10 →</a>
+    </article>
+
+    <article class="card searchable" data-search="class 11 eleventh physics chemistry maths biology commerce arts">
+      <div class="card-icon">📙</div>
+      <h3>Class 11</h3>
+      <p>Explore science, commerce and arts subjects.</p>
+      <a class="card-link" href="classes.html">Explore Class 11 →</a>
+    </article>
+
+    <article class="card searchable" data-search="class 12 twelfth physics chemistry maths biology commerce arts">
+      <div class="card-icon">🎓</div>
+      <h3>Class 12</h3>
+      <p>Revision, important questions and exam preparation.</p>
+      <a class="card-link" href="classes.html">Explore Class 12 →</a>
+    </article>
+
+  </div>
+
+  <p id="searchMessage" style="text-align:center;margin-top:18px;color:#68738a;"></p>
+</section>
+
+<section class="dark-section" id="resources">
+  <div class="section">
+    <div class="section-head">
+      <span class="eyebrow">Learn Your Way</span>
+      <h2>Learning Resources</h2>
+      <p>अपनी ज़रूरत के अनुसार पढ़ाई का तरीका चुनें।</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="card">
+        <div class="card-icon">📖</div>
+        <h3>Study Notes</h3>
+        <p>Chapter-wise notes और आसान explanations।</p>
+        <a class="card-link" href="class9-maths.html">Open Study Notes →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">✍️</div>
+        <h3>Practice Questions</h3>
+        <p>अपनी समझ जाँचने के लिए प्रश्न हल करें।</p>
+        <a class="card-link" href="#quiz">Start Practice →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">🎥</div>
+        <h3>Video Lectures</h3>
+        <p>अपनी पढ़ाई के लिए उपयोगी वीडियो खोजें।</p>
+        <a class="card-link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Explore YouTube →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">📄</div>
+        <h3>PDF Library</h3>
+        <p>उपलब्ध study material को पढ़ें और सेव करें।</p>
+        <a class="card-link" href="classes.html">Explore Resources →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="dark-section" id="ai" style="background:#101d42;">
+  <div class="section">
+    <div class="ai-layout">
+
+      <div class="ai-info">
+        <span class="eyebrow">Smart Learning</span>
+        <h2>Meet Your AI Study Assistant 🤖</h2>
+        <p>
+          सवाल पूछो, concepts समझो और अपनी पढ़ाई की practice करो।
+          यह अभी एक demo assistant है। वास्तविक AI जवाबों के लिए
+          सुरक्षित AI service को जोड़ना होगा।
+        </p>
+        <a href="#quiz" class="btn btn-gold">Try a Quiz →</a>
+      </div>
+
+      <div class="ai-box">
+        <div class="ai-head">
+          <div class="ai-avatar">☀</div>
+          <div>
+            <strong>BHANU AI Tutor</strong>
+            <small>Demo Mode · Basic Learning Help</small>
+          </div>
+        </div>
+
+        <div class="ai-chat" id="aiChat" aria-live="polite">
+          <div class="message bot">
+            नमस्ते! 👋 मैं BHANU StudyCentre का demo assistant हूँ।
+            तुम Maths, Science या study tips के बारे में पूछ सकते हो।
+          </div>
+        </div>
+
+        <form class="ai-input" id="aiForm">
+          <input id="aiQuestion" type="text"
+            placeholder="अपना सवाल लिखें..."
+            maxlength="500" required>
+          <button type="submit">Send</button>
+        </form>
+
+        <p class="ai-note">
+          Demo only: यह वास्तविक AI model से जुड़ा नहीं है।
+          जवाब सीमित उदाहरणों पर आधारित हैं।
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quiz">
+  <div class="section-head">
+    <span class="eyebrow">Test Your Knowledge</span>
+    <h2>Quick Maths Quiz 🧠</h2>
+    <p>एक छोटा-सा टेस्ट देकर अपनी तैयारी जाँचें।</p>
+  </div>
+
+  <div class="quiz-box">
+    <p id="quizCount" style="color:#68738a;margin-bottom:8px;">Question 1 of 5</p>
+    <h3 id="quizQuestion">Loading question...</h3>
+    <div id="quizOptions"></div>
+    <p id="quizResult" aria-live="polite"></p>
+    <button class="btn btn-gold" id="nextQuestion" style="display:none;">
+      Next Question →
+    </button>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="card" style="text-align:center;padding:35px;">
+    <div style="font-size:40px;">🌟</div>
+    <h2 style="color:#0b1535;margin:10px 0;">Your Future Starts Today</h2>
+    <p style="color:#68738a;margin-bottom:20px;">
+      रोज़ थोड़ा सीखो, नियमित अभ्यास करो और अपने लक्ष्य की ओर बढ़ो।
+    </p>
+    <a class="btn btn-gold" href="#classes">Start Learning →</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+
+    <div>
+      <h3>☀️ BHANU StudyCentre</h3>
+      <p>Learn Today, Lead Tomorrow.</p>
+      <p style="margin-top:10px;">
+        A learning platform concept designed to help students study,
+        practice and grow.
+      </p>
+    </div>
+
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#classes">Classes</a>
+      <a href="#resources">Resources</a>
+      <a href="#quiz">Online Quiz</a>
+    </div>
+
+    <div>
+      <h4>Study</h4>
+      <a href="classes.html">All Classes</a>
+      <a href="class9-maths.html">Class 9 Maths</a>
+      <a href="#ai">AI Tutor Demo</a>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © <span id="year"></span> BHANU StudyCentre. Learn Today, Lead Tomorrow.
+  </div>
+</footer>
+
+<script>
+/* Mobile menu */
+const menuBtn = document.getElementById("menuBtn");
+const navLinks = document.getElementById("navLinks");
+
+menuBtn.addEventListener("click", function () {
+  const opened = navLinks.classList.toggle("open");
+  menuBtn.setAttribute("aria-expanded", String(opened));
+});
+
+navLinks.querySelectorAll("a").forEach(function (link) {
+  link.addEventListener("click", function () {
+    navLinks.classList.remove("open");
+    menuBtn.setAttribute("aria-expanded", "false");
+  });
+});
+
+/* Class search */
+function searchClasses() {
+  const query = document.getElementById("classSearch")
+    .value.trim().toLowerCase();
+
+  const cards = document.querySelectorAll(".searchable");
+  let visible = 0;
+
+  cards.forEach(function (card) {
+    const text = (card.innerText + " " + card.dataset.search).toLowerCase();
+    const matches = text.includes(query);
+
+    card.style.display = matches ? "" : "none";
+
+    if (matches) visible++;
+  });
+
+  document.getElementById("searchMessage").textContent =
+    visible === 0 ? "कोई matching class नहीं मिली।" : "";
+}
+
+document.getElementById("searchBtn").addEventListener("click", searchClasses);
+
+document.getElementById("classSearch").addEventListener("input", searchClasses);
+
+/* AI Tutor demo - NOT a real AI connection */
+const aiForm = document.getElementById("aiForm");
+const aiQuestion = document.getElementById("aiQuestion");
+const aiChat = document.getElementById("aiChat");
+
+function addMessage(text, type) {
+  const div = document.createElement("div");
+  div.className = "message " + type;
+  div.textContent = text;
+  aiChat.appendChild(div);
+  aiChat.scrollTop = aiChat.scrollHeight;
+}
+
+function demoAnswer(question) {
+  const q = question.toLowerCase();
+
+  if (q.includes("hello") || q.includes("hi") || q.includes("नमस्ते")) {
+    return "नमस्ते! 😊 आज तुम कौन-सा subject पढ़ना चाहते हो?";
+  }
+
+  if (q.includes("2+2") || q.includes("2 + 2")) {
+    return "2 + 2 = 4.\n\nपहले 2 वस्तुएँ लें और फिर 2 और जोड़ें। कुल 4 वस्तुएँ होंगी।";
+  }
+
+  if (q.includes("math") || q.includes("गणित")) {
+    return "गणित सीखने का अच्छा तरीका है: concept समझो, solved example देखो और फिर खुद practice करो।\n\nअपना specific question लिखो। वास्तविक AI अभी connected नहीं है।";
+  }
+
+  if (q.includes("study") || q.includes("पढ़ाई")) {
+    return "Study tip:\n1. छोटा daily target बनाओ।\n2. 25 मिनट focus से पढ़ो।\n3. 5 मिनट का break लो।\n4. अंत में revision करो।";
+  }
+
+  if (q.includes("science") || q.includes("विज्ञान")) {
+    return "Science पढ़ते समय definitions, concepts और diagrams पर ध्यान दो। किसी specific topic का नाम लिखो। यह demo assistant है, इसलिए हर सवाल का सही जवाब नहीं दे सकता।";
+  }
+
+  return "तुमने पूछा: " + question +
+    "\n\nयह demo assistant है, वास्तविक AI नहीं। अभी इसका AI model से connection नहीं है। वास्तविक AI tutor बनाने के लिए सुरक्षित backend और AI API जोड़नी होगी।";
+}
+
+aiForm.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const question = aiQuestion.value.trim();
+  if (!question) return;
+
+  addMessage(question, "user");
+  aiQuestion.value = "";
+
+  const answer = demoAnswer(question);
+  addMessage(answer, "bot");
+});
+
+/* Interactive quiz */
+const questions = [
+  {
+    q: "What is 7 × 8? (7 गुणा 8 कितना है?)",
+    options: ["54", "56", "64", "48"],
+    correct: 1,
+    explanation: "7 × 8 = 56."
+  },
+  {
+    q: "What is the square of 9? (9 का वर्ग कितना है?)",
+    options: ["18", "72", "81", "99"],
+    correct: 2,
+    explanation: "9² = 9 × 9 = 81."
+  },
+  {
+    q: "What is the value of 15 + 17?",
+    options: ["30", "31", "32", "33"],
+    correct: 2,
+    explanation: "15 + 17 = 32."
+  },
+  {
+    q: "What are the coordinates of the origin?",
+    options: ["(1, 1)", "(0, 0)", "(0, 1)", "(1, 0)"],
+    correct: 1,
+    explanation: "मूल बिंदु के coordinates (0, 0) होते हैं।"
+  },
+  {
+    q: "Which number is a prime number?",
+    options: ["9", "15", "17", "21"],
+    correct: 2,
+    explanation: "17 के केवल दो positive factors हैं: 1 और 17."
+  }
+];
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+const quizQuestion = document.getElementById("quizQuestion");
+const quizOptions = document.getElementById("quizOptions");
+const quizResult = document.getElementById("quizResult");
+const quizCount = document.getElementById("quizCount");
+const nextQuestion = document.getElementById("nextQuestion");
+
+function showQuestion() {
+  answered = false;
+  const item = questions[currentQuestion];
+
+  quizCount.textContent =
+    "Question " + (currentQuestion + 1) + " of " + questions.length;
+
+  quizQuestion.textContent = item.q;
+  quizOptions.replaceChildren();
+  quizResult.textContent = "";
+  nextQuestion.style.display = "none";
+
+  item.options.forEach(function (option, index) {
+    const button = document.createElement("button");
+    button.className = "quiz-option";
+    button.textContent = String.fromCharCode(65 + index) + ". " + option;
+
+    button.addEventListener("click", function () {
+      if (answered) return;
+      answered = true;
+
+      const buttons = quizOptions.querySelectorAll("button");
+      buttons.forEach(function (b) {
+        b.disabled = true;
+      });
+
+      if (index === item.correct) {
+        score++;
+        quizResult.textContent = "✅ Correct! " + item.explanation;
+        quizResult.style.color = "#15803d";
+      } else {
+        quizResult.textContent =
+          "❌ सही उत्तर: " + item.options[item.correct] +
+          ". " + item.explanation;
+        quizResult.style.color = "#b42318";
+      }
+
+      nextQuestion.style.display = "inline-block";
+      nextQuestion.textContent =
+        currentQuestion === questions.length - 1
+          ? "See Result"
+          : "Next Question →";
+    });
+
+    quizOptions.appendChild(button);
+  });
+}
+
+nextQuestion.addEventListener("click", function () {
+  if (currentQuestion < questions.length - 1) {
+    currentQuestion++;
+    showQuestion();
+  } else {
+    quizCount.textContent = "Quiz Completed!";
+    quizQuestion.textContent =
+      "Your Score: " + score + " / " + questions.length;
+
+    quizOptions.replaceChildren();
+
+    quizResult.textContent =
+      score === questions.length
+        ? "Excellent! सभी उत्तर सही हैं! 🎉"
+        : "अच्छा प्रयास! सही उत्तरों को दोबारा पढ़कर फिर कोशिश करो।";
+
+    nextQuestion.textContent = "Play Again";
+    nextQuestion.style.display = "inline-block";
+
+    nextQuestion.onclick = function () {
+      currentQuestion = 0;
+      score = 0;
+      nextQuestion.onclick = null;
+      showQuestion();
+    };
+  }
+});
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+showQuestion();
+</script>
+
+</body>
+  </html>
