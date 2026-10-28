@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 11 - Algorithms | BHANU StudyCentre</title>
+<style>
+:root{--navy:#10254c;--blue:#2563eb;--gold:#f5b82e;--bg:#f4f7fc}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:#243047;line-height:1.7}
+header{background:var(--navy);color:white;text-align:center;padding:25px 12px;border-bottom:5px solid var(--gold)}
+.logo{font-size:27px;font-weight:bold;color:var(--gold)}
+.tagline{font-size:14px}
+nav{background:white;padding:12px;text-align:center}
+nav a{display:inline-block;margin:5px 8px;color:var(--navy);font-weight:bold;text-decoration:none}
+.container{width:min(920px,94%);margin:22px auto}
+.card{background:white;padding:20px;margin-bottom:18px;border-radius:12px;box-shadow:0 3px 12px #10254c12;overflow-wrap:anywhere}
+h2{color:var(--navy);font-size:21px}
+h3{color:var(--blue)}
+.formula{background:#fff7df;border-left:5px solid var(--gold);padding:12px;margin:12px 0;border-radius:5px;font-weight:bold}
+.example{background:#eef5ff;padding:13px;border-radius:8px;margin:12px 0}
+pre{white-space:pre-wrap;background:#17233b;color:#f4f7fc;padding:14px;border-radius:8px;overflow-wrap:anywhere}
+li{margin-bottom:8px}
+button{background:var(--navy);color:white;border:0;border-radius:7px;padding:11px 17px;font-size:15px;cursor:pointer}
+.answer{display:none;background:#e8f8ed;padding:12px;border-radius:6px;margin-top:12px}
+footer{background:var(--navy);color:white;text-align:center;padding:18px;margin-top:30px}
+@media(max-width:600px){.card{padding:15px}h2{font-size:19px}.logo{font-size:23px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">BHANU StudyCentre</div>
+<div class="tagline">Learn Today, Lead Tomorrow</div>
+<h1>Class 9 Mathematics — Chapter 11</h1>
+<p><strong>Algorithms | एल्गोरिदम</strong></p>
+</header>
+
+<nav>
+<a href="https://pp3026882-art.github.io/Studycentre-/preview.html">Home / होम</a>
+<a href="class9-maths.html">All Chapters / सभी अध्याय</a>
+<a href="class9-chapter10.html">← Previous Chapter</a>
+<a href="class9-chapter12.html">Next Chapter →</a>
+</nav>
+
+<main class="container">
+<section class="card">
+<h2>1. Introduction | परिचय</h2>
+<p><b>English:</b> An algorithm is a finite sequence of clear, ordered steps used to solve a problem or complete a task.</p>
+<p><b>हिंदी:</b> किसी समस्या को हल करने या कार्य पूरा करने के लिए बनाए गए स्पष्ट और क्रमबद्ध सीमित चरणों को एल्गोरिदम कहते हैं।</p>
+<div class="example">Example: Making tea follows a sequence of steps, such as boiling water, adding tea leaves and serving the tea.</div>
+</section>
+
+<section class="card">
+<h2>2. Characteristics of an Algorithm | एल्गोरिदम की विशेषताएँ</h2>
+<ul>
+<li><b>Input:</b> It may accept input values. / इसमें इनपुट हो सकता है।</li>
+<li><b>Output:</b> It produces a result. / यह परिणाम देता है।</li>
+<li><b>Clarity:</b> Every step should be clear. / हर चरण स्पष्ट होना चाहिए।</li>
+<li><b>Finiteness:</b> It should finish after a finite number of steps. / यह सीमित चरणों में समाप्त होना चाहिए।</li>
+<li><b>Effectiveness:</b> Each step should be practical to perform. / प्रत्येक चरण किया जा सकने वाला हो।</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>3. Algorithm to Add Two Numbers | दो संख्याएँ जोड़ने का एल्गोरिदम</h2>
+<pre>
+Step 1: Start
+Step 2: Input A and B
+Step 3: SUM = A + B
+Step 4: Display SUM
+Step 5: Stop
+</pre>
+<div class="example">Example: A = 5, B = 7<br>SUM = 5 + 7 = <b>12</b></div>
+</section>
+
+<section class="card">
+<h2>4. Algorithm to Find the Larger Number | बड़ी संख्या ज्ञात करना</h2>
+<pre>
+Step 1: Start
+Step 2: Input A and B
+Step 3: If A > B, display A
+Step 4: Else if B > A, display B
+Step 5: Otherwise, display "Both are equal"
+Step 6: Stop
+</pre>
+<div class="example">Example: A = 12, B = 8<br>Output: 12 is larger.</div>
+</section>
+
+<section class="card">
+<h2>5. Algorithm to Find an Even or Odd Number | सम या विषम</h2>
+<pre>
+Step 1: Start
+Step 2: Input N
+Step 3: If N % 2 == 0, display "Even"
+Step 4: Otherwise, display "Odd"
+Step 5: Stop
+</pre>
+<p><b>हिंदी:</b> यदि संख्या को 2 से भाग देने पर शेषफल 0 हो, तो वह सम है; अन्यथा विषम है।</p>
+<div class="example">N = 14 → Even / सम<br>N = 9 → Odd / विषम</div>
+</section>
+
+<section class="card">
+<h2>6. Algorithm to Find the Area of a Rectangle | आयत का क्षेत्रफल</h2>
+<pre>
+Step 1: Start
+Step 2: Input length L and breadth B
+Step 3: AREA = L × B
+Step 4: Display AREA
+Step 5: Stop
+</pre>
+<div class="formula">Area = Length × Breadth<br>क्षेत्रफल = लंबाई × चौड़ाई</div>
+<div class="example">L = 8, B = 4<br>Area = 8 × 4 = <b>32 square units</b></div>
+</section>
+
+<section class="card">
+<h2>7. Algorithm to Find the Average | औसत निकालना</h2>
+<pre>
+Step 1: Start
+Step 2: Input A, B and C
+Step 3: SUM = A + B + C
+Step 4: AVG = SUM / 3
+Step 5: Display AVG
+Step 6: Stop
+</pre>
+<div class="example">A = 10, B = 20, C = 30<br>Average = 60 ÷ 3 = <b>20</b></div>
+</section>
+
+<section class="card">
+<h2>8. Algorithm and Flowchart | एल्गोरिदम और फ्लोचार्ट</h2>
+<p>एल्गोरिदम चरणों में लिखे निर्देश हैं। फ्लोचार्ट उन्हीं चरणों को चित्रात्मक प्रतीकों द्वारा दिखाता है।</p>
+<ul>
+<li><b>Oval:</b> Start / Stop</li>
+<li><b>Parallelogram:</b> Input / Output</li>
+<li><b>Rectangle:</b> Process / गणना</li>
+<li><b>Diamond:</b> Decision / निर्णय</li>
+<li><b>Arrow:</b> Flow direction / दिशा</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>9. Important Terms | महत्वपूर्ण शब्द</h2>
+<ul>
+<li><b>Input:</b> दी गई जानकारी।</li>
+<li><b>Output:</b> प्राप्त परिणाम।</li>
+<li><b>Process:</b> जानकारी पर किया गया कार्य।</li>
+<li><b>Condition:</b> जाँचने वाला नियम।</li>
+<li><b>Loop:</b> किसी चरण को दोहराना।</li>
+<li><b>Pseudocode:</b> सरल भाषा में लिखे गए प्रोग्राम-जैसे चरण।</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>10. 15 Solved Examples | 15 हल किए गए उदाहरण</h2>
+<div class="example"><b>Example 1:</b> Add 4 and 6.<br>4 + 6 = <b>10</b></div>
+<div class="example"><b>Example 2:</b> Subtract 3 from 10.<br>10 − 3 = <b>7</b></div>
+<div class="example"><b>Example 3:</b> Multiply 5 by 4.<br>5 × 4 = <b>20</b></div>
+<div class="example"><b>Example 4:</b> Divide 20 by 5.<br>20 ÷ 5 = <b>4</b></div>
+<div class="example"><b>Example 5:</b> Check whether 12 is even.<br>12 % 2 = 0, so it is <b>Even</b>.</div>
+<div class="example"><b>Example 6:</b> Check whether 7 is odd.<br>7 % 2 = 1, so it is <b>Odd</b>.</div>
+<div class="example"><b>Example 7:</b> Find the larger number: 9 and 14.<br>Answer: <b>14</b></div>
+<div class="example"><b>Example 8:</b> Find the area of a rectangle with length 6 and breadth 3.<br>Area = 6 × 3 = <b>18</b></div>
+<div class="example"><b>Example 9:</b> Find the perimeter of a square with side 5.<br>Perimeter = 4 × 5 = <b>20</b></div>
+<div class="example"><b>Example 10:</b> Find the average of 4, 8 and 12.<br>Average = 24 ÷ 3 = <b>8</b></div>
+<div class="example"><b>Example 11:</b> Find the square of 6.<br>6 × 6 = <b>36</b></div>
+<div class="example"><b>Example 12:</b> Find the cube of 3.<br>3 × 3 × 3 = <b>27</b></div>
+<div class="example"><b>Example 13:</b> Add three numbers: 2, 3 and 4.<br>Sum = 2 + 3 + 4 = <b>9</b></div>
+<div class="example"><b>Example 14:</b> A number is 18. Is it divisible by 3?<br>1 + 8 = 9, so yes, 18 is divisible by <b>3</b>.</div>
+<div class="example"><b>Example 15:</b> Find the area of a square with side 7.<br>Area = 7 × 7 = <b>49 square units</b></div>
+</section>
+
+<section class="card">
+<h2>11. 15 Practice Questions | 15 अभ्यास प्रश्न</h2>
+<ol>
+<li>एल्गोरिदम की परिभाषा लिखिए।</li>
+<li>एल्गोरिदम की कोई दो विशेषताएँ लिखिए।</li>
+<li>5 और 8 को जोड़ने के चरण लिखिए।</li>
+<li>20 में से 7 घटाने का एल्गोरिदम लिखिए।</li>
+<li>जाँचिए कि 16 सम है या विषम।</li>
+<li>जाँचिए कि 11 सम है या विषम।</li>
+<li>12 और 19 में बड़ी संख्या ज्ञात करने के चरण लिखिए।</li>
+<li>लंबाई 9 और चौड़ाई 4 वाले आयत का क्षेत्रफल निकालने का एल्गोरिदम लिखिए।</li>
+<li>भुजा 6 वाले वर्ग का परिमाप निकालिए।</li>
+<li>5, 10 और 15 का औसत निकालिए।</li>
+<li>फ्लोचार्ट क्या है?</li>
+<li>फ्लोचार्ट में निर्णय के लिए कौन-सा आकार उपयोग होता है?</li>
+<li>इनपुट और आउटपुट में अंतर बताइए।</li>
+<li>7 का वर्ग निकालने के चरण लिखिए।</li>
+<li>एल्गोरिदम में Stop चरण क्यों आवश्यक है?</li>
+</ol>
+<button onclick="toggleAnswers()">Show / Hide Answers | उत्तर देखें</button>
+<div class="answer" id="answers">
+<ol>
+<li>किसी समस्या को हल करने के लिए स्पष्ट और क्रमबद्ध सीमित चरण।</li>
+<li>स्पष्टता और सीमित चरणों में समाप्त होना।</li>
+<li>Start → Input 5, 8 → Sum = 5 + 8 → Display 13 → Stop.</li>
+<li>Start → Input 20, 7 → Difference = 20 − 7 → Display 13 → Stop.</li>
+<li>16 सम है।</li>
+<li>11 विषम है।</li>
+<li>19 बड़ी संख्या है।</li>
+<li>Area = 9 × 4 = 36 वर्ग इकाई।</li>
+<li>Perimeter = 4 × 6 = 24 इकाई।</li>
+<li>Average = (5 + 10 + 15) ÷ 3 = 10.</li>
+<li>किसी प्रक्रिया को चित्रों और प्रतीकों से दिखाना।</li>
+<li>Diamond / हीरे का आकार।</li>
+<li>Input दिया गया डेटा है; output प्राप्त परिणाम है।</li>
+<li>Square = 7 × 7 = 49.</li>
+<li>यह एल्गोरिदम के समाप्त होने को दर्शाता है।</li>
+</ol>
+</div>
+</section>
+
+<section class="card">
+<h2>12. Quick Revision | त्वरित दोहराव</h2>
+<div class="formula">Algorithm = समस्या हल करने के क्रमबद्ध चरण</div>
+<div class="formula">Rectangle Area = Length × Breadth</div>
+<div class="formula">Square Perimeter = 4 × Side</div>
+<div class="formula">Average = Sum ÷ Number of values</div>
+<p>एक अच्छा एल्गोरिदम स्पष्ट, सही और सीमित चरणों वाला होना चाहिए।</p>
+</section>
+</main>
+
+<footer>BHANU StudyCentre<br>Learn Today, Lead Tomorrow</footer>
+<script>
+function toggleAnswers(){
+const a=document.getElementById("answers");
+a.style.display=a.style.display==="block"?"none":"block";
+}
+</script>
+</body>
+  </html>
