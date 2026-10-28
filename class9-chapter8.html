@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Class 9 Mathematics Chapter 8: Exploring Sequences and Progressions — bilingual notes, examples and practice questions.">
+<title>Class 9 Maths Chapter 8 | BHANU StudyCentre</title>
+
+<style>
+:root {
+  --navy: #10254c;
+  --blue: #2563eb;
+  --gold: #f5b82e;
+  --bg: #f4f7fc;
+  --white: #ffffff;
+  --text: #243047;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+header {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-bottom: 5px solid var(--gold);
+}
+.logo {
+  font-size: 27px;
+  font-weight: bold;
+  color: var(--gold);
+}
+.tagline { font-size: 14px; margin: 3px 0 15px; }
+header h1 { font-size: 25px; margin: 10px 0 0; }
+header p { margin: 5px 0; }
+nav {
+  background: white;
+  padding: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px #00000012;
+}
+nav a {
+  display: inline-block;
+  color: var(--navy);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 5px 8px;
+}
+nav a:hover { color: var(--blue); }
+.container {
+  width: min(920px, 94%);
+  margin: 22px auto;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 18px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #10254c12;
+  overflow-wrap: anywhere;
+}
+h2 { color: var(--navy); font-size: 21px; }
+h3 { color: var(--blue); }
+.formula {
+  background: #fff7df;
+  border-left: 5px solid var(--gold);
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.example {
+  background: #eef5ff;
+  padding: 13px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+li { margin-bottom: 8px; }
+button {
+  background: var(--navy);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  padding: 11px 17px;
+  font-size: 15px;
+  cursor: pointer;
+}
+button:hover { background: var(--blue); }
+.answer {
+  display: none;
+  background: #e8f8ed;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 30px;
+}
+@media (max-width: 600px) {
+  header h1 { font-size: 21px; }
+  .logo { font-size: 23px; }
+  .card { padding: 15px; }
+  h2 { font-size: 19px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">BHANU StudyCentre</div>
+  <div class="tagline">Learn Today, Lead Tomorrow</div>
+  <h1>Class 9 Mathematics — Chapter 8</h1>
+  <p><strong>Exploring Sequences and Progressions</strong></p>
+  <p>अनुक्रम और श्रेणियों की खोज</p>
+</header>
+
+<nav>
+  <a href="https://pp3026882-art.github.io/Studycentre-/preview.html">Home / होम</a>
+  <a href="class9-maths.html">All Chapters / सभी अध्याय</a>
+  <a href="class9-chapter7.html">← Previous Chapter</a>
+  <a href="class9-chapter9.html">Next Chapter →</a>
+</nav>
+
+<main class="container">
+
+<section class="card">
+  <h2>📘 Chapter Introduction | अध्याय का परिचय</h2>
+  <p><strong>English:</strong> A sequence is an ordered list of numbers that follows a particular rule or pattern. Progressions are special sequences that follow specific mathematical rules.</p>
+  <p><strong>हिंदी:</strong> अनुक्रम संख्याओं की एक व्यवस्थित सूची है, जिसमें संख्याएँ किसी विशेष नियम या पैटर्न का पालन करती हैं। श्रेणियाँ ऐसे विशेष अनुक्रम हैं जो निश्चित गणितीय नियमों का पालन करते हैं।</p>
+  <div class="example">
+    <strong>Example / उदाहरण:</strong><br>
+    2, 4, 6, 8, 10, ...<br>
+    प्रत्येक अगली संख्या पिछली संख्या से 2 अधिक है।
+  </div>
+</section>
+
+<section class="card">
+  <h2>1. What Is a Sequence? | अनुक्रम क्या है?</h2>
+  <p><strong>English:</strong> A sequence is a list of numbers arranged in a definite order.</p>
+  <p><strong>हिंदी:</strong> निश्चित क्रम में लिखी गई संख्याओं की सूची को अनुक्रम कहते हैं।</p>
+  <h3>Examples | उदाहरण</h3>
+  <ul>
+    <li>1, 2, 3, 4, 5, ... — counting numbers</li>
+    <li>2, 4, 6, 8, 10, ... — even numbers</li>
+    <li>1, 3, 5, 7, 9, ... — odd numbers</li>
+    <li>5, 10, 15, 20, 25, ... — multiples of 5</li>
+    <li>1, 4, 9, 16, 25, ... — square numbers</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>2. Terms and Positions | पद और स्थान</h2>
+  <p>अनुक्रम की प्रत्येक संख्या को उसका <strong>पद (Term)</strong> कहते हैं। पद का स्थान बताता है कि वह अनुक्रम में कितने नंबर पर है।</p>
+  <div class="example">
+    अनुक्रम: 3, 6, 9, 12, 15, ...<br>
+    पहला पद = 3<br>
+    दूसरा पद = 6<br>
+    तीसरा पद = 9<br>
+    चौथा पद = 12
+  </div>
+  <div class="formula">
+    यदि अनुक्रम में nवाँ पद aₙ से दर्शाया जाए, तो a₁ पहला पद, a₂ दूसरा पद और a₃ तीसरा पद होगा।
+  </div>
+</section>
+
+<section class="card">
+  <h2>3. Finding the Pattern | पैटर्न पहचानना</h2>
+  <p>अगला पद निकालने के लिए देखिए कि संख्याओं के बीच क्या संबंध है।</p>
+  <div class="example">
+    <strong>Example 1:</strong> 4, 8, 12, 16, __<br>
+    हर बार 4 जोड़ा गया है। अगला पद = <strong>20</strong>
+  </div>
+  <div class="example">
+    <strong>Example 2:</strong> 30, 25, 20, 15, __<br>
+    हर बार 5 घटाया गया है। अगला पद = <strong>10</strong>
+  </div>
+  <div class="example">
+    <strong>Example 3:</strong> 2, 4, 8, 16, __<br>
+    हर बार 2 से गुणा किया गया है। अगला पद = <strong>32</strong>
+  </div>
+</section>
+
+<section class="card">
+  <h2>4. Arithmetic Progression (AP) | समांतर श्रेणी</h2>
+  <p><strong>English:</strong> An arithmetic progression is a sequence in which the difference between consecutive terms remains the same.</p>
+  <p><strong>हिंदी:</strong> जिस अनुक्रम में लगातार दो पदों का अंतर हमेशा समान रहता है, उसे समांतर श्रेणी (AP) कहते हैं।</p>
+
+  <div class="example">
+    3, 7, 11, 15, 19, ...<br>
+    अंतर: 7 − 3 = 4, 11 − 7 = 4, 15 − 11 = 4<br>
+    इसलिए यह AP है और सार्व अंतर 4 है।
+  </div>
+
+  <div class="formula">
+    Common Difference (d) = दूसरा पद − पहला पद<br>
+    सार्व अंतर (d) = दूसरा पद − पहला पद
+  </div>
+
+  <h3>More examples | अन्य उदाहरण</h3>
+  <ul>
+    <li>2, 5, 8, 11, ... → d = 3</li>
+    <li>10, 8, 6, 4, ... → d = −2</li>
+    <li>7, 7, 7, 7, ... → d = 0</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>5. nth Term of an AP | AP का nवाँ पद</h2>
+  <p>यदि पहला पद a और सार्व अंतर d हो, तो AP का nवाँ पद निम्न सूत्र से निकाला जाता है।</p>
+  <div class="formula">
+    aₙ = a + (n − 1)d
+  </div>
+  <p>जहाँ:</p>
+  <ul>
+    <li>a = पहला पद (First term)</li>
+    <li>d = सार्व अंतर (Common difference)</li>
+    <li>n = पद का स्थान (Position)</li>
+    <li>aₙ = nवाँ पद (nth term)</li>
+  </ul>
+
+  <div class="example">
+    <strong>Solved Example:</strong><br>
+    AP: 5, 8, 11, 14, ... का 6वाँ पद निकालिए।<br>
+    a = 5, d = 3, n = 6<br>
+    a₆ = a + (n − 1)d<br>
+    a₆ = 5 + (6 − 1) × 3<br>
+    a₆ = 5 + 15 = <strong>20</strong>
+  </div>
+</section>
+
+<section class="card">
+  <h2>6. Sum of the First n Terms | पहले n पदों का योग</h2>
+  <p>समांतर श्रेणी के पहले n पदों का योग निकालने के लिए यह सूत्र उपयोग किया जा सकता है।</p>
+  <div class="formula">
+    Sₙ = n/2 × [2a + (n − 1)d]
+  </div>
+  <p>यहाँ Sₙ पहले n पदों का योग, a पहला पद और d सार्व अंतर है।</p>
+  <div class="example">
+    <strong>Example:</strong> 2, 4, 6, 8, 10 का योग निकालिए।<br>
+    n = 5, a = 2, d = 2<br>
+    S₅ = 5/2 × [2(2) + (5 − 1)2]<br>
+    S₅ = 5/2 × [4 + 8]<br>
+    S₅ = 5/2 × 12 = <strong>30</strong>
+  </div>
+  <p><em>ध्यान दें: इन AP सूत्रों का उपयोग तभी करें जब प्रश्न में समांतर श्रेणी की शर्त पूरी होती हो।</em></p>
+</section>
+
+<section class="card">
+  <h2>7. Other Number Patterns | अन्य संख्या पैटर्न</h2>
+  <h3>Square Numbers | वर्ग संख्याएँ</h3>
+  <p>1, 4, 9, 16, 25, 36, ...</p>
+  <div class="formula">nवीं वर्ग संख्या = n²</div>
+  <p>उदाहरण: पाँचवीं वर्ग संख्या = 5² = 25</p>
+
+  <h3>Cube Numbers | घन संख्याएँ</h3>
+  <p>1, 8, 27, 64, 125, ...</p>
+  <div class="formula">nवीं घन संख्या = n³</div>
+  <p>उदाहरण: तीसरी घन संख्या = 3³ = 27</p>
+</section>
+
+<section class="card">
+  <h2>8. Important Points | महत्वपूर्ण बातें</h2>
+  <ul>
+    <li>अनुक्रम में पद एक निश्चित क्रम में होते हैं।</li>
+    <li>हर अनुक्रम का नियम पहचानना आवश्यक है।</li>
+    <li>AP में लगातार पदों का अंतर समान होता है।</li>
+    <li>AP का nवाँ पद: aₙ = a + (n − 1)d</li>
+    <li>AP के पहले n पदों का योग: Sₙ = n/2 [2a + (n − 1)d]</li>
+    <li>वर्ग संख्याएँ: 1, 4, 9, 16, 25, ...</li>
+    <li>घन संख्याएँ: 1, 8, 27, 64, 125, ...</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2>9. Practice Questions | अभ्यास प्रश्न</h2>
+  <p>पहले स्वयं हल करने का प्रयास करें, फिर उत्तर देखें।</p>
+  <ol>
+    <li>2, 4, 6, 8, __, __ के अगले दो पद लिखिए।</li>
+    <li>5, 10, 15, 20, __ का अगला पद लिखिए।</li>
+    <li>3, 7, 11, 15, ... का सार्व अंतर ज्ञात कीजिए।</li>
+    <li>10, 7, 4, 1, ... का सार्व अंतर ज्ञात कीजिए।</li>
+    <li>1, 4, 9, 16, __ का अगला पद लिखिए।</li>
+    <li>AP: 4, 7, 10, 13, ... का 7वाँ पद निकालिए।</li>
+    <li>AP: 6, 10, 14, 18, ... का 5वाँ पद निकालिए।</li>
+    <li>पहले पाँच सम धनात्मक पूर्णांकों का योग निकालिए।</li>
+    <li>क्या 2, 5, 8, 11, ... एक AP है? कारण बताइए।</li>
+    <li>अनुक्रम 1, 2, 4, 8, 16, ... में अगला पद क्या होगा?</li>
+  </ol>
+
+  <button onclick="toggleAnswers()">Show / Hide Answers | उत्तर देखें</button>
+  <div class="answer" id="answers">
+    <strong>Answers | उत्तर:</strong>
+    <ol>
+      <li>10, 12</li>
+      <li>25</li>
+      <li>d = 4</li>
+      <li>d = −3</li>
+      <li>25</li>
+      <li>a = 4, d = 3, n = 7; a₇ = 4 + 6 × 3 = 22</li>
+      <li>a = 6, d = 4, n = 5; a₅ = 6 + 4 × 4 = 22</li>
+      <li>2 + 4 + 6 + 8 + 10 = 30</li>
+      <li>हाँ, क्योंकि लगातार पदों का अंतर 3 है।</li>
+      <li>32</li>
+    </ol>
+  </div>
+</section>
+
+<section class="card">
+  <h2>10. Quick Revision | त्वरित दोहराव</h2>
+  <div class="formula">Sequence = व्यवस्थित पदों की सूची</div>
+  <div class="formula">AP में सार्व अंतर: d = a₂ − a₁</div>
+  <div class="formula">AP का nवाँ पद: aₙ = a + (n − 1)d</div>
+  <div class="formula">AP के पहले n पदों का योग: Sₙ = n/2 [2a + (n − 1)d]</div>
+  <div class="formula">वर्ग संख्या = n²; घन संख्या = n³</div>
+</section>
+
+</main>
+
+<footer>
+  <strong>BHANU StudyCentre</strong><br>
+  Learn Today, Lead Tomorrow<br>
+  Class 9 Mathematics — Chapter 8
+</footer>
+
+<script>
+function toggleAnswers() {
+  const box = document.getElementById("answers");
+  box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
