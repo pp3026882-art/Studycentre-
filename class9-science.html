@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="BHANU StudyCentre Class 9 Science — Chemistry, Biology, Physics notes in Hindi and English.">
+
+<title>Class 9 Science | BHANU StudyCentre</title>
+
+<style>
+:root {
+  --navy: #10254c;
+  --gold: #f5c451;
+  --bg: #f3f6fc;
+  --white: #ffffff;
+  --text: #1e293b;
+  --green: #137547;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+header {
+  background: linear-gradient(135deg, #10254c, #244b86);
+  color: white;
+  text-align: center;
+  padding: 32px 15px;
+  border-bottom: 5px solid var(--gold);
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+header h1 {
+  color: var(--gold);
+  font-size: clamp(27px, 5vw, 40px);
+  margin: 0;
+}
+
+header p {
+  margin: 7px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--gold);
+  color: var(--navy);
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+
+nav {
+  background: white;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 8px #0001;
+}
+
+nav a {
+  color: white;
+  background: var(--navy);
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover,
+.open-btn:hover {
+  background: #31558d;
+}
+
+main {
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 0 13px;
+}
+
+.intro,
+.subject,
+.notice {
+  background: white;
+  padding: 20px;
+  border-radius: 14px;
+  margin: 18px 0;
+  box-shadow: 0 3px 12px #10254c10;
+}
+
+h2 {
+  color: var(--navy);
+  border-bottom: 3px solid var(--gold);
+  padding-bottom: 7px;
+}
+
+.subject-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subject-title span {
+  font-size: 30px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #d5deed;
+  border-radius: 9px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.search-box:focus {
+  outline: 2px solid var(--gold);
+  border-color: var(--navy);
+}
+
+.chapter {
+  background: #f8faff;
+  border: 1px solid #dce4f1;
+  border-radius: 10px;
+  padding: 14px;
+  margin: 12px 0;
+}
+
+.chapter h3 {
+  color: var(--navy);
+  margin: 0 0 5px;
+}
+
+.chapter p {
+  margin: 5px 0 12px;
+}
+
+.open-btn {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  padding: 9px 14px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.coming {
+  display: inline-block;
+  background: #fff0c2;
+  color: #765100;
+  padding: 5px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.notice {
+  border-left: 5px solid var(--gold);
+}
+
+footer {
+  background: var(--navy);
+  color: white;
+  text-align: center;
+  padding: 24px 12px;
+  margin-top: 35px;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#noResults {
+  display: none;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 25px 12px;
+  }
+
+  .intro,
+  .subject,
+  .notice {
+    padding: 15px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 7px 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img
+    class="logo"
+    src="bhanu-logo.png"
+    alt="BHANU StudyCentre Logo"
+    onerror="this.style.display='none'"
+  >
+
+  <h1>BHANU StudyCentre</h1>
+  <p><b>Learn Today, Lead Tomorrow</b></p>
+  <p>कक्षा 9 विज्ञान | Class 9 Science</p>
+  <span class="badge">Hindi + English Learning</span>
+</header>
+
+<nav>
+  <a href="preview.html">⌂ Home</a>
+  <a href="#chemistry">🧪 Chemistry</a>
+  <a href="#biology">🧬 Biology</a>
+  <a href="#physics">⚙️ Physics</a>
+  <a href="#formulas">📘 Study Help</a>
+</nav>
+
+<main>
+
+<section class="intro">
+  <h2>Welcome to Class 9 Science</h2>
+
+  <p>
+    BHANU StudyCentre में आपका स्वागत है।
+    यहाँ आप कक्षा 9 विज्ञान के अध्यायों को हिंदी और English में पढ़ सकते हैं।
+  </p>
+
+  <p>
+    Welcome! Study Chemistry, Biology and Physics chapter by chapter.
+  </p>
+
+  <input
+    type="search"
+    class="search-box"
+    id="chapterSearch"
+    placeholder="🔍 अध्याय खोजें / Search chapters..."
+    aria-label="Search science chapters"
+  >
+
+  <p id="searchCount"></p>
+</section>
+
+<section class="subject" id="chemistry">
+  <h2 class="subject-title">
+    <span>🧪</span> Chemistry (रसायन विज्ञान)
+  </h2>
+
+  <div class="chapter">
+    <h3>Chapter 1: Matter in Our Surroundings</h3>
+    <p>हमारे आस-पास के पदार्थ</p>
+    <p>पदार्थ की अवस्थाएँ, तापमान, गलनांक, क्वथनांक और वाष्पीकरण।</p>
+    <a class="open-btn" href="class9-science-chapter1.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 2: Is Matter Around Us Pure?</h3>
+    <p>क्या हमारे आस-पास के पदार्थ शुद्ध हैं?</p>
+    <p>मिश्रण, विलयन, निलंबन, कोलॉइड और पृथक्करण की विधियाँ।</p>
+    <a class="open-btn" href="class9-science-chapter2.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 3: Atoms and Molecules</h3>
+    <p>परमाणु एवं अणु</p>
+    <p>रासायनिक संयोजन के नियम, परमाणु, अणु और रासायनिक सूत्र।</p>
+    <a class="open-btn" href="class9-science-chapter3.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 4: Structure of the Atom</h3>
+    <p>परमाणु की संरचना</p>
+    <p>इलेक्ट्रॉन, प्रोटॉन, न्यूट्रॉन, परमाणु संख्या और समस्थानिक।</p>
+    <a class="open-btn" href="class9-science-chapter4.html">Open Chapter →</a>
+  </div>
+</section>
+
+<section class="subject" id="biology">
+  <h2 class="subject-title">
+    <span>🧬</span> Biology (जीव विज्ञान)
+  </h2>
+
+  <div class="chapter">
+    <h3>Chapter 5: The Fundamental Unit of Life</h3>
+    <p>जीवन की मौलिक इकाई — कोशिका</p>
+    <p>कोशिका की संरचना, कोशिकांग और कोशिका झिल्ली।</p>
+    <a class="open-btn" href="class9-science-chapter5.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 6: Tissues</h3>
+    <p>ऊतक</p>
+    <p>पादप ऊतक और जंतु ऊतक के प्रकार एवं कार्य।</p>
+    <a class="open-btn" href="class9-science-chapter6.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 12: Improvement in Food Resources</h3>
+    <p>खाद्य संसाधनों में सुधार</p>
+    <p>फसल उत्पादन, खाद, उर्वरक और पशुपालन।</p>
+    <a class="open-btn" href="class9-science-chapter12.html">Open Chapter →</a>
+  </div>
+</section>
+
+<section class="subject" id="physics">
+  <h2 class="subject-title">
+    <span>⚙️</span> Physics (भौतिक विज्ञान)
+  </h2>
+
+  <div class="chapter">
+    <h3>Chapter 7: Motion</h3>
+    <p>गति</p>
+    <p>दूरी, विस्थापन, चाल, वेग, त्वरण और गति के समीकरण।</p>
+    <a class="open-btn" href="class9-science-chapter7.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 8: Force and Laws of Motion</h3>
+    <p>बल तथा गति के नियम</p>
+    <p>बल, जड़त्व, न्यूटन के गति के नियम और संवेग।</p>
+    <a class="open-btn" href="class9-science-chapter8.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 9: Gravitation</h3>
+    <p>गुरुत्वाकर्षण</p>
+    <p>गुरुत्वाकर्षण का नियम, मुक्त पतन, द्रव्यमान, भार और उत्प्लावन।</p>
+    <a class="open-btn" href="class9-science-chapter9.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 10: Work and Energy</h3>
+    <p>कार्य तथा ऊर्जा</p>
+    <p>कार्य, गतिज ऊर्जा, स्थितिज ऊर्जा, ऊर्जा संरक्षण और शक्ति।</p>
+    <a class="open-btn" href="class9-science-chapter10.html">Open Chapter →</a>
+  </div>
+
+  <div class="chapter">
+    <h3>Chapter 11: Sound</h3>
+    <p>ध्वनि</p>
+    <p>ध्वनि तरंगें, आवृत्ति, आयाम, तरंगदैर्ध्य और प्रतिध्वनि।</p>
+    <a class="open-btn" href="class9-science-chapter11.html">Open Chapter →</a>
+  </div>
+</section>
+
+<section class="notice" id="formulas">
+  <h2>📘 Study Help</h2>
+  <p>
+    हर अध्याय में Notes, महत्वपूर्ण प्रश्न, MCQ, अभ्यास प्रश्न
+    और जहाँ लागू हों, वहाँ Formulas जोड़े जा सकते हैं।
+  </p>
+  <p>
+    <b>ध्यान दें:</b> यह मुख्य पेज है। अध्याय खोलने के लिए
+    संबंधित अध्याय की HTML फ़ाइल भी GitHub पर बनानी होगी।
+  </p>
+</section>
+
+<p id="noResults">कोई अध्याय नहीं मिला। दूसरा नाम खोजें।</p>
+
+</main>
+
+<footer>
+  <strong>BHANU StudyCentre</strong>
+  <p>Learn Today, Lead Tomorrow</p>
+  <p>Class 9 Science | Hindi + English</p>
+  <a href="preview.html" style="color:#f5c451">Back to Home</a>
+</footer>
+
+<script>
+const searchInput = document.getElementById("chapterSearch");
+const chapters = [...document.querySelectorAll(".chapter")];
+const noResults = document.getElementById("noResults");
+const searchCount = document.getElementById("searchCount");
+
+function searchChapters() {
+  const query = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+
+  chapters.forEach(chapter => {
+    const matches = chapter.textContent.toLowerCase().includes(query);
+
+    chapter.classList.toggle("hidden", !matches);
+
+    if (matches) {
+      visible++;
+    }
+  });
+
+  document.querySelectorAll(".subject").forEach(subject => {
+    const hasVisibleChapter = [...subject.querySelectorAll(".chapter")]
+      .some(chapter => !chapter.classList.contains("hidden"));
+
+    subject.classList.toggle("hidden", !hasVisibleChapter);
+  });
+
+  noResults.style.display = visible === 0 ? "block" : "none";
+  searchCount.textContent = query
+    ? visible + " chapter(s) found"
+    : "कुल " + chapters.length + " अध्याय";
+}
+
+searchInput.addEventListener("input", searchChapters);
+searchChapters();
+</script>
+
+</body>
+</html>
